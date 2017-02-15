@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://keithjgrant.com/notes/2017/02/49315/</loc>
+    <lastmod>2017-02-15T13:41:55+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://keithjgrant.com/notes/2017/02/86308/</loc>
     <lastmod>2017-02-14T23:58:28+00:00</lastmod>
   </url>
@@ -133,7 +138,7 @@
   
   <url>
     <loc>http://keithjgrant.com/</loc>
-    <lastmod>2017-02-14T23:58:28+00:00</lastmod>
+    <lastmod>2017-02-15T13:41:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,7 +150,7 @@
   
   <url>
     <loc>http://keithjgrant.com/notes/</loc>
-    <lastmod>2017-02-14T23:58:28+00:00</lastmod>
+    <lastmod>2017-02-15T13:41:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
