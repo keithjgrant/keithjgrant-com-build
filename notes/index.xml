@@ -8,19 +8,9 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Feb 2017 21:21:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Feb 2017 15:16:42 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/02/76891/</link>
-      <pubDate>Mon, 20 Feb 2017 21:21:31 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/02/76891/</guid>
-      <description>&lt;p&gt;This is a test post from the Omnibear Chrom extension!&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title></title>
@@ -117,6 +107,16 @@
       
       <guid>http://keithjgrant.com/notes/2017/02/105953/</guid>
       <description>&lt;p&gt;Are there any codemods to convert LESS to PostCSS/cssnext syntax? Doesn&amp;rsquo;t need to be too fancy, just cut down on the busywork.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/01/145158/</link>
+      <pubDate>Fri, 27 Jan 2017 14:51:58 -0500</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/01/145158/</guid>
+      <description>&lt;p&gt;Progressive enhancement and rule of least power MATTER &lt;a href=&#34;https://twitter.com/ArielleDRoss/status/825043489016705024&#34;&gt;https://twitter.com/ArielleDRoss/status/825043489016705024&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
