@@ -2,61 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://keithjgrant.com/notes/2017/02/54331/</loc>
-    <lastmod>2017-02-22T15:05:31+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/54190/</loc>
-    <lastmod>2017-02-22T15:03:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/54125/</loc>
-    <lastmod>2017-02-22T15:02:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/53920/</loc>
-    <lastmod>2017-02-22T14:58:40+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/53906/</loc>
-    <lastmod>2017-02-22T14:58:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/4505/</loc>
-    <lastmod>2017-02-22T01:15:05+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/likes/2017/02/4484/</loc>
-    <lastmod>2017-02-22T01:14:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/likes/2017/02/4462/</loc>
-    <lastmod>2017-02-22T01:14:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/likes/2017/02/4319/</loc>
-    <lastmod>2017-02-22T01:11:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/76648/</loc>
-    <lastmod>2017-02-21T21:17:28+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://keithjgrant.com/notes/2017/02/76622/</loc>
-    <lastmod>2017-02-21T21:17:02+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://keithjgrant.com/notes/2017/02/55002/</loc>
     <lastmod>2017-02-16T15:16:42+00:00</lastmod>
   </url>
@@ -208,19 +153,19 @@
   
   <url>
     <loc>http://keithjgrant.com/</loc>
-    <lastmod>2017-02-22T15:05:31+00:00</lastmod>
+    <lastmod>2017-02-16T15:16:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://keithjgrant.com/likes/</loc>
-    <lastmod>2017-02-22T01:14:44+00:00</lastmod>
+    <lastmod>2017-02-15T15:48:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://keithjgrant.com/notes/</loc>
-    <lastmod>2017-02-22T15:05:31+00:00</lastmod>
+    <lastmod>2017-02-16T15:16:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
