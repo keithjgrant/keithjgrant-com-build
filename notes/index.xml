@@ -8,9 +8,18 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2017 15:11:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Mar 2017 20:17:27 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/03/73047/</link>
+      <pubDate>Mon, 06 Mar 2017 20:17:27 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/03/73047/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -102,18 +111,6 @@
       
       <guid>http://keithjgrant.com/notes/2017/02/65242/</guid>
       <description>&lt;p&gt;My editor doesn’t do so great working in a file with a 50,000-character line of text 😣&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/02/49315/</link>
-      <pubDate>Wed, 15 Feb 2017 13:41:55 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/02/49315/</guid>
-      <description>&lt;p&gt;This is the natural end result of moving your styles into JS&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/itsmisscs/status/831640807706857472&#34;&gt;https://twitter.com/itsmisscs/status/831640807706857472&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
