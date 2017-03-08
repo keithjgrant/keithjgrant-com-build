@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Mar 2017 19:18:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2017 19:54:54 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/03/71694/</link>
+      <pubDate>Wed, 08 Mar 2017 19:54:54 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/03/71694/</guid>
+      <description>&lt;p&gt;I really wish flexbox &amp;amp; grid didn’t break margin collapsing 😕&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -98,15 +108,6 @@
       <guid>http://keithjgrant.com/notes/2017/03/73187/</guid>
       <description>&lt;p&gt;Always amazed to realize how little CSS actually needs prefixes anymore&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/likes/2017/03/69327/</link>
-      <pubDate>Thu, 02 Mar 2017 19:15:27 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/likes/2017/03/69327/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -8,9 +8,19 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Mar 2017 19:18:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2017 19:54:54 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/03/71694/</link>
+      <pubDate>Wed, 08 Mar 2017 19:54:54 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/03/71694/</guid>
+      <description>&lt;p&gt;I really wish flexbox &amp;amp; grid didn’t break margin collapsing 😕&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -103,18 +113,6 @@
       <description>&lt;p&gt;This is the natural end result of moving your styles into JS&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/itsmisscs/status/831640807706857472&#34;&gt;https://twitter.com/itsmisscs/status/831640807706857472&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/02/86308/</link>
-      <pubDate>Tue, 14 Feb 2017 23:58:28 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/02/86308/</guid>
-      <description>&lt;p&gt;Google AMP is like nutrition supplements&amp;hellip; Michael Pollan says, “Be the kind of person who takes supplements — then skip the supplements,” because supplements have been proven not to help you, but people who take them are healthier.&lt;/p&gt;
-
-&lt;p&gt;Maybe Google AMP is like that: Follow the rules of AMP pages, then skip the AMP cache.&lt;/p&gt;
 </description>
     </item>
     
