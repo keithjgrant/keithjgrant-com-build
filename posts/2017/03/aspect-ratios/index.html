@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="theme-color" content="#1a3c4d">
 
+<meta name="generator" content="Hugo 0.18.1" />
 
 
-
-<title>Keith J. Grant</title>
+<title>A better approach to CSS aspect ratios</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,9 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="">
-<meta name="twitter:description" content="">
+<meta name="og:title" content="A better approach to CSS aspect ratios">
+<meta name="twitter:description" content="There’s an old hack for creating elements with a fixed aspect ratio that involves using a percentage-based padding. You may be familiar with it. It looks something like this:
+.tile { height: 0; overfl">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,13 +38,13 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
 
 </head>
-<body>
+<body class="h-entry">
   <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-home" viewBox="0 0 1024 1024"><title>home</title><path class="path1" d="M1017.382 622.826l-452.050-499.634c-14.051-15.533-32.992-24.086-53.333-24.086-0.002 0 0 0 0 0-20.339 0-39.282 8.555-53.334 24.086l-452.050 499.634c-9.485 10.485-8.675 26.674 1.808 36.158 4.899 4.432 11.043 6.616 17.168 6.616 6.982 0 13.938-2.838 18.992-8.426l109.016-120.491v410.517c0 42.347 34.453 76.8 76.8 76.8h563.2c42.347 0 76.8-34.453 76.8-76.8v-410.517l109.018 120.493c9.485 10.483 25.674 11.296 36.158 1.808 10.483-9.485 11.293-25.675 1.806-36.158zM614.4 972.8h-204.8v-230.4c0-14.115 11.485-25.6 25.6-25.6h153.6c14.115 0 25.6 11.485 25.6 25.6v230.4zM819.2 947.2c0 14.115-11.485 25.6-25.6 25.6h-128v-230.4c0-42.349-34.451-76.8-76.8-76.8h-153.6c-42.347 0-76.8 34.451-76.8 76.8v230.4h-128c-14.115 0-25.6-11.485-25.6-25.6v-467.106l291.832-322.552c4.222-4.667 9.68-7.237 15.368-7.237s11.146 2.57 15.366 7.235l291.834 322.552v467.107z"></path></symbol>
@@ -118,11 +119,232 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1>Not Found</h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">A better approach to CSS aspect ratios</a></h1>
     </div>
+    <article class="post-body">
+      <div>
+        
+
+        
+
+        
+
+        <div class="e-content content show-embeds">
+            
+
+<p>There’s an old hack for creating elements with a fixed aspect ratio that involves using a percentage-based padding. You may be familiar with it. It looks something like this:</p>
+
+<pre><code class="language-css">.tile {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25%;
+  background-color: bisque;
+}
+</code></pre>
+
+<p>The element is forced to have no height, then its bottom padding is set to the actual desired height. This produces an element something like this:</p>
+
+<figure class="-demo-container">
+  <div class="-demo1">
+    4:1 aspect ratio
+  </div>
+</figure>
+
+<p>This works because of a peculiar quirk of padding: Any padding specified in percent computes to a percentage of the elements <em>width</em>&mdash;even if it is a top or bottom padding. (The same is true for margin as well.) This is a bit counter-intuitive, but it comes in handy. I think the original reasoning was so you could declare something like <code>padding: 5%</code> and get an equal padding on all four sides of the element, regardless of its shape.</p>
+
+<p>Of course, this approach has a problem: overflow is cut off:</p>
+
+<figure class="-demo-container">
+  <div class="-demo1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
+
+<p>This approach creates fixed height of the element, which in CSS is an anti-pattern. For this reason, I’ve always felt dirty using it.</p>
+
+<h2 id="dealing-with-overflow">Dealing with overflow</h2>
+
+<p>A while back, I stumbled across an approach that is similar, but prevents the overflow problem. Instead of setting our element’s height, we can set the height on a floated <code>::before</code> pseudo-element. Watch what happens when we do this:</p>
+
+<pre><code class="language-css">.tile {
+  background-color: darkseagreen;
+}
+.tile::before {
+  content: &quot;&quot;;
+  float: left;
+  padding-bottom: 25%;
+}
+.tile::after {
+  clear: left;
+  content: &quot; &quot;;
+  display: table;
+}
+</code></pre>
+
+<p>This produces a very similar result:</p>
+
+<figure class="-demo-container">
+  <div class="-demo2">
+    4:1 aspect ratio
+  </div>
+</figure>
+
+<p>However, the element will still grow to contain overflow if necessary:</p>
+
+<figure class="-demo-container">
+  <div class="-demo2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>The trick is, instead of explicitly controlling (and thus limiting) the height of the element, we set a known height on the floated pseudo element. By using a padding-based percentage, this will be a ratio of the element’s width. We float it left and leave it empty, producing a width of zero. Here is the floated element, with a black outline added:</p>
+
+<figure class="-demo-container">
+  <div class="-demo3">
+    Floated pseudo element provides a min height to the element.
+  </div>
+</figure>
+
+<p>Then, in the <code>::after</code> pseudo-element, we clear the float, forcing the element to grow to contain the floated <code>::before</code>. Since the float has a width of 0, it doesn’t interfere with the content layout in any way.  And when the content extends below the bottom of the float, the box simply grows naturally to contain it:</p>
+
+<figure class="-demo-container">
+  <div class="-demo3">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
+
+<style>
+  .-demo-container {
+    max-width: 300px;
+    line-height: 1.6;
+  }
+
+  .-demo1 {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 25%;
+    background-color: bisque;
+  }
+
+  .-demo2 {
+    background-color: darkseagreen;
+    line-height: 1.6;
+  }
+  .-demo2::before {
+    content: "";
+    float: left;
+    padding-bottom: 25%;
+  }
+  .-demo2::after {
+    clear: left;
+    content: " ";
+    display: table;
+  }
+
+  .-demo3 {
+    background-color: darkseagreen;
+    line-height: 1.6;
+  }
+  .-demo3::before {
+    content: "";
+    float: left;
+    padding-bottom: 25%;
+    border: 1px solid black;
+  }
+  .-demo3::after {
+    clear: left;
+    content: " ";
+    display: table;
+  }
+</style>
+
+            
+          
+        </div>
+      </div>
+      <p class="post-date metadata"><date class="dt-published">14 Mar 2017 10:12:43</date></p>
+      
+        <div class="loading-indicator" id="comments-loader">
+  <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
+  <div>Loading interactions...</div>
+</div>
+<div class="post-interaction is-hidden" id="comments">
+  <div class="tabs">
+    <button aria-controls="pane-replies">
+      <svg class="interaction-icon"><use xlink:href="#icon-reply"></use></svg>
+      <span id="reply-count"></span>
+    </button>
+    <button aria-controls="pane-likes">
+      <svg class="interaction-icon"><use xlink:href="#icon-heart"></use></svg>
+      <span id="like-count"></span>
+    </button>
+    <button aria-controls="pane-shares">
+      <svg class="interaction-icon"><use xlink:href="#icon-share"></use></svg>
+      <span id="share-count"></span>
+    </button>
+  </div>
+  <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
+    <h3>Replies</h3>
+    <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/aspect-ratios/" />
+      <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
+      <div class="inline-form__inputs">
+        <input type="text" id="reply-url" name="source" />
+        <button type="submit" id="webmention-submit">Send Webmention</button>
+      </div>
+      <p class="form-alert is-hidden"></p>
+    </form>
+    <ul class="replies" id="replies"></ul>
+  </div>
+  <div class="tab-pane" id="pane-likes" aria-controlled-by="tab-likes">
+    <h3>Likes</h3>
+    <ul class="replies" id="likes"></ul>
+  </div>
+  <div class="tab-pane" id="pane-shares" aria-controlled-by="tab-shares">
+    <h3>Shares</h3>
+    <ul class="replies" id="shares"></ul>
+  </div>
+</div>
+
+<template id="reply-template">
+  <li class="reply">
+    <img src="" />
+    <div class="reply__body">
+      <div>
+        <a class="reply__author" href=""></a>
+        <a class="reply__date" href=""></a>
+      </div>
+      <div class="content reply__content"></div>
+    </div>
+  </li>
+</template>
+
+<template id="like-template">
+  <li class="reply reply--like">
+    <img src="" />
+    <div class="reply__body">
+      <div>
+        <a class="reply__author" href=""></a>
+        <a class="reply__date" href=""></a>
+      </div>
+    </div>
+  </li>
+</template>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    loadWebmentions("http://keithjgrant.com/posts/2017/03/aspect-ratios/",  null );
+  });
+</script>
+
+      
+    </article>
   </main>
 
-  <div class="bottom-container">
+  
+    <div class="bottom-container">
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
@@ -151,6 +373,7 @@
   </div>
 </div>
 
+  
   
 <script src="/js/prettify.js"></script>
 <script type="text/javascript" src="/js/page.js"></script>

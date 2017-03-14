@@ -123,42 +123,142 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/01/its-both/">
-            It’s Both
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
+            A better approach to CSS aspect ratios
           </a>
         </h2>
         <div class="content e-content">
             
 
-<p>I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems of software architecture.</p>
+<p>There’s an old hack for creating elements with a fixed aspect ratio that involves using a percentage-based padding. You may be familiar with it. It looks something like this:</p>
 
-<p>I’m also (in case you <a href="https://www.manning.com/books/css-in-depth">somehow missed it</a>) a “CSS Guy”. I learned CSS during its infancy in the mid-nineties and have worked to stay up to speed ever since.</p>
+<pre><code class="language-css">.tile {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25%;
+  background-color: bisque;
+}
+</code></pre>
 
-<p>When I look out at the industry today, it kind of feels <a href="https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#1e2d">like</a> <a href="http://mrmrs.io/writing/2016/03/24/scalable-css/">watching</a> <a href="http://www.zeldman.com/2017/01/03/kiss-my-classname/">parents</a> <a href="https://twitter.com/thejameskyle/status/824795012680421376">fight</a>. And I’ll admit it, I’ve <a href="/posts/2015/05/against-css-in-js/">contributed to the problem</a>. But the more I watch this unfold, the more I feel like we have two camps, talking right past one another, and no meeting in the middle. Both are missing the points the other is trying to make. So I’m shifting my stance:</p>
+<p>The element is forced to have no height, then its bottom padding is set to the actual desired height. This produces an element something like this:</p>
 
-<h2 id="we-re-both-right">We’re both right</h2>
+<figure class="-demo-container">
+  <div class="-demo1">
+    4:1 aspect ratio
+  </div>
+</figure>
 
-<p>Writing SPAs is complicated business. The page isn’t just a static document you can slap some styles on and call it a day. What if you need to load content dynamically, and it results in unpredictable source order of your CSS? How do you know if styles for deeply-nested dependencies are already loaded? How do you know when you can delete code?</p>
+<p>This works because of a peculiar quirk of padding: Any padding specified in percent computes to a percentage of the elements <em>width</em>&mdash;even if it is a top or bottom padding. (The same is true for margin as well.) This is a bit counter-intuitive, but it comes in handy. I think the original reasoning was so you could declare something like <code>padding: 5%</code> and get an equal padding on all four sides of the element, regardless of its shape.</p>
 
-<p>These are hard problems. You can’t answer them by simply saying “learn CSS”. I personally may not like CSS-in-JS or inline styles, but I do realize they are important experiments. They are quests for answers to these issues. I don’t think they are the ultimate solution. That’s okay. Maybe they will get us to it.</p>
+<p>Of course, this approach has a problem: overflow is cut off:</p>
 
-<p>On the other hand, we have whole teams of developers who fundamentally don’t grok CSS. They code up their JavaScript components, then stick the styles they want into the project stylesheet. These may be great developers when it comes to traditional programming languages, but they get really frustrated with layout problems or specificity battles. Compound this with “too many cooks in the kitchen” and you have a real mess.</p>
+<figure class="-demo-container">
+  <div class="-demo1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
 
-<p>We have sixty-plus years of industry experience about architecting code in traditional programming languages, but we’ve struggled to apply this stuff to CSS. Only in the last seven years or so have we started to figure out best practices for the language, and we are not doing a great job of disseminating them. When we teach that BEM is a “naming convention” rather emphasize it is a way to architect systems with modular code, thousands of developers miss the point entirely. This only drives them further away because the so-called “best practices” don’t work when they aren’t actually followed.</p>
+<p>This approach creates fixed height of the element, which in CSS is an anti-pattern. For this reason, I’ve always felt dirty using it.</p>
 
-<p>They don’t understand that BEM is about architecture, not simply namespacing. They don’t see the value of using a pattern library, of centralizing your CSS and imposing order on who controls the CSS rather than treating it like a garbage pile where any random dev can just add haphazard code.</p>
+<h2 id="dealing-with-overflow">Dealing with overflow</h2>
 
-<p>When JavaScript-centric developers hear, “putting your CSS in JavaScript makes it easier” they clamor to get on board. But this must be made absolutely clear: you still need to understand CSS. If you don’t know what a block formatting context is, CSS in JS will not fix your layout issues. If you don’t understand stacking contexts, you will continue to struggle with futile z-index battles. If you don’t learn custom properties or the difference between cascade and inheritance or margin collapsing, these experiments will not really solve the fundamental problem: most teams don’t know how to develop with CSS.</p>
+<p>A while back, I stumbled across an approach that is similar, but prevents the overflow problem. Instead of setting our element’s height, we can set the height on a floated <code>::before</code> pseudo-element. Watch what happens when we do this:</p>
 
-<h2 id="always-bet-on-del-javascript-del-the-open-web">Always bet on <del>JavaScript</del> the Open Web</h2>
+<pre><code class="language-css">.tile {
+  background-color: darkseagreen;
+}
+.tile::before {
+  content: &quot;&quot;;
+  float: left;
+  padding-bottom: 25%;
+}
+.tile::after {
+  clear: left;
+  content: &quot; &quot;;
+  display: table;
+}
+</code></pre>
 
-<p>So, yes. Hire engineers who know how to deal with system architecture. But also <a href="/posts/2016/10/your-team-needs-a-ux-engineer/">hire someone exclusively for their CSS skills</a>. Put smart people on your team from both camps. Let them work together to solve these problems. Because your problems are unique and your solutions might not look like someone else’s.</p>
+<p>This produces a very similar result:</p>
 
-<p>I can say with confidence that CSS in JS will pass. In our industry, something new always comes along. The saying is, “Always bet on JavaScript” &mdash; but this isn’t quite right. When it’s JavaScript vs Java or Ruby, yes, bet on JS. JavaScript wins not because it is inherently better; it wins because it is part of the open web platform.</p>
+<figure class="-demo-container">
+  <div class="-demo2">
+    4:1 aspect ratio
+  </div>
+</figure>
 
-<p>The open web platform always wins. And CSS is part of that platform. It’s not CSS versus JS. It’s CSS <em>plus</em> JS. The platform will evolve. And the platform will win.</p>
+<p>However, the element will still grow to contain overflow if necessary:</p>
 
-          <p class="post-date">27 Jan 2017</p>
+<figure class="-demo-container">
+  <div class="-demo2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>The trick is, instead of explicitly controlling (and thus limiting) the height of the element, we set a known height on the floated pseudo element. By using a padding-based percentage, this will be a ratio of the element’s width. We float it left and leave it empty, producing a width of zero. Here is the floated element, with a black outline added:</p>
+
+<figure class="-demo-container">
+  <div class="-demo3">
+    Floated pseudo element provides a min height to the element.
+  </div>
+</figure>
+
+<p>Then, in the <code>::after</code> pseudo-element, we clear the float, forcing the element to grow to contain the floated <code>::before</code>. Since the float has a width of 0, it doesn’t interfere with the content layout in any way.  And when the content extends below the bottom of the float, the box simply grows naturally to contain it:</p>
+
+<figure class="-demo-container">
+  <div class="-demo3">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
+  </div>
+</figure>
+
+<style>
+  .-demo-container {
+    max-width: 300px;
+    line-height: 1.6;
+  }
+
+  .-demo1 {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 25%;
+    background-color: bisque;
+  }
+
+  .-demo2 {
+    background-color: darkseagreen;
+    line-height: 1.6;
+  }
+  .-demo2::before {
+    content: "";
+    float: left;
+    padding-bottom: 25%;
+  }
+  .-demo2::after {
+    clear: left;
+    content: " ";
+    display: table;
+  }
+
+  .-demo3 {
+    background-color: darkseagreen;
+    line-height: 1.6;
+  }
+  .-demo3::before {
+    content: "";
+    float: left;
+    padding-bottom: 25%;
+    border: 1px solid black;
+  }
+  .-demo3::after {
+    clear: left;
+    content: " ";
+    display: table;
+  }
+</style>
+
+          <p class="post-date">14 Mar 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -182,7 +282,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/01/its-both/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/aspect-ratios/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -229,7 +329,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/01/its-both/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/03/aspect-ratios/",  null );
   });
 </script>
 
@@ -241,6 +341,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">A better approach to CSS aspect ratios</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/01/its-both/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -255,11 +360,6 @@
       <li><a href="http://keithjgrant.com/posts/2016/12/separation-of-concerns/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">Let’s Talk About Separation of Concerns</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2016/10/your-team-needs-a-ux-engineer/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">Your Team Needs a UX Engineer</div>
       </a></li>
       
     </ul>
