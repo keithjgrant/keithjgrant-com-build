@@ -148,7 +148,7 @@
   </div>
 </figure>
 
-<p>This works because of a peculiar quirk of padding: Any padding specified in percent computes to a percentage of the elements <em>width</em>&mdash;even if it is a top or bottom padding. (The same is true for margin as well.) This is a bit counter-intuitive, but it comes in handy. I think the original reasoning was so you could declare something like <code>padding: 5%</code> and get an equal padding on all four sides of the element, regardless of its shape.</p>
+<p>This works because of a peculiar quirk of padding: Any padding specified in percent computes to a percentage of the element’s <em>width</em>&mdash;even if it is a top or bottom padding. (The same is true for margin as well.) This is a bit counter-intuitive, but it comes in handy. I think the original reasoning was so you could declare something like <code>padding: 5%</code> and get an equal padding on all four sides of the element, regardless of its shape.</p>
 
 <p>Of course, this approach has a problem: overflow is cut off:</p>
 
@@ -179,7 +179,7 @@
 }
 </code></pre>
 
-<p>This produces a very similar result:</p>
+<p>The <code>::after</code> is just a familiar clearfix. This produces a very similar result:</p>
 
 <figure class="-demo-container">
   <div class="-demo2">
