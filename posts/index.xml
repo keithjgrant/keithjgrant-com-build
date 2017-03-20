@@ -8,9 +8,31 @@
     <description>Recent content in Posts on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2017 10:12:43 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 Mar 2017 15:07:49 -0400</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/posts/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title>More thoughts on CSS in JS</title>
+      <link>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</link>
+      <pubDate>Mon, 20 Mar 2017 15:07:49 -0400</pubDate>
+      
+      <guid>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</guid>
+      <description>&lt;p&gt;At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.&lt;/p&gt;
+
+&lt;p&gt;In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.&lt;/p&gt;
+
+&lt;p&gt;I’ve also had to work on projects coded in ExtJS. These feel about the same way: although you are technically editing a JS file, you aren’t really programming “in JavaScript.” Instead, you are basically coding via configuration. Actual understanding of JavaScript doesn’t help you much.&lt;/p&gt;
+
+&lt;p&gt;To me, CSS in JS feels the same way. It feels like a tool so a bunch of JavaScript devs can kinda-sorta hack together styles without actually having to write CSS. Except the syntax is more clunky and you have taken away the cascade. (And, yet, surprise! You still need to learn the most complicated parts of CSS.)&lt;/p&gt;
+
+&lt;p&gt;Now I’ll be fair, CSS in JS libraries typically provide a much thinner buffer between you and the actual CSS when compared to PrimeFaces. But still… it’s an abstraction layer. It gives the illusion of writing styles in perfect isolation, but inheritance still takes place and can interfere. It gets between me and the code I want actual control over.&lt;/p&gt;
+
+&lt;p&gt;I know what I’m doing when I code CSS. I &lt;em&gt;want&lt;/em&gt; the cascade in many instances; removing it feels crippling. I won’t deny CSS in JS offers some benefits. But they are benefits I am not convinced I need at a cost I am not sure I want to pay.&lt;/p&gt;
+
+&lt;p&gt;I won’t say it’s the wrong choice for everyone. Some folks who really do grok CSS are in favor of it. Sometimes ExtJS is the right choice (don’t quote me on that). But dang, please know it’s a compromise that someone might have to clean up down the road.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A better approach to CSS aspect ratios</title>
@@ -645,22 +667,6 @@ render() {
     margin: 1em;
   }
 &lt;/style&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Simply White</title>
-      <link>http://keithjgrant.com/posts/2016/01/simply-white/</link>
-      <pubDate>Wed, 27 Jan 2016 00:00:00 -0500</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2016/01/simply-white/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.benjaminmoore.com/en-us/for-your-home/benjamin-moore-color-trends-2016&#34;&gt;Benjamin
-Moore&lt;/a&gt; has declared the Color of the Year for 2016 to be &amp;ldquo;simply white&amp;rdquo;. We have reached peak
-minimalism, y&amp;rsquo;all.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m steering into the skid. Here&amp;rsquo;s my new design.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://keithjgrant.com/images/2016/simply-white.png&#34; alt=&#34;screenshot of &#39;Simply White&#39; design&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

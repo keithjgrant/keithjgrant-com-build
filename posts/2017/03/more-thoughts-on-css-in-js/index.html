@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>Keith J. Grant</title>
+<title>More thoughts on CSS in JS</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,8 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="">
-<meta name="twitter:description" content="">
+<meta name="og:title" content="More thoughts on CSS in JS">
+<meta name="twitter:description" content="At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF ">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,7 +37,7 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/likes/2017/03/65674/">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
@@ -118,7 +118,7 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/likes/2017/03/65674/"></a></h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">More thoughts on CSS in JS</a></h1>
     </div>
     <article class="post-body">
       <div>
@@ -127,28 +127,134 @@
         
 
         
-  <div class="metadata text-left">liked a post</div>
-  <p class="show-embeds">
-  
-    <a href="undefined" rel="like-of" class="u-like-of">undefined</a>
-  
-  </p>
-
 
         <div class="e-content content show-embeds">
+            <p>At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.</p>
+
+<p>In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.</p>
+
+<p>I’ve also had to work on projects coded in ExtJS. These feel about the same way: although you are technically editing a JS file, you aren’t really programming “in JavaScript.” Instead, you are basically coding via configuration. Actual understanding of JavaScript doesn’t help you much.</p>
+
+<p>To me, CSS in JS feels the same way. It feels like a tool so a bunch of JavaScript devs can kinda-sorta hack together styles without actually having to write CSS. Except the syntax is more clunky and you have taken away the cascade. (And, yet, surprise! You still need to learn the most complicated parts of CSS.)</p>
+
+<p>Now I’ll be fair, CSS in JS libraries typically provide a much thinner buffer between you and the actual CSS when compared to PrimeFaces. But still… it’s an abstraction layer. It gives the illusion of writing styles in perfect isolation, but inheritance still takes place and can interfere. It gets between me and the code I want actual control over.</p>
+
+<p>I know what I’m doing when I code CSS. I <em>want</em> the cascade in many instances; removing it feels crippling. I won’t deny CSS in JS offers some benefits. But they are benefits I am not convinced I need at a cost I am not sure I want to pay.</p>
+
+<p>I won’t say it’s the wrong choice for everyone. Some folks who really do grok CSS are in favor of it. Sometimes ExtJS is the right choice (don’t quote me on that). But dang, please know it’s a compromise that someone might have to clean up down the road.</p>
+
             
-            
-              <data class="p-bridgy-omit-link" value="false" />
-            
-          
-            <a href="https://brid.gy/publish/twitter"></a>
           
         </div>
       </div>
-      <p class="post-date metadata"><date class="dt-published">13 Mar 2017 18:14:34</date></p>
+      <p class="post-date metadata"><date class="dt-published">20 Mar 2017 15:07:49</date></p>
+      
+        <div class="loading-indicator" id="comments-loader">
+  <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
+  <div>Loading interactions...</div>
+</div>
+<div class="post-interaction is-hidden" id="comments">
+  <div class="tabs">
+    <button aria-controls="pane-replies">
+      <svg class="interaction-icon"><use xlink:href="#icon-reply"></use></svg>
+      <span id="reply-count"></span>
+    </button>
+    <button aria-controls="pane-likes">
+      <svg class="interaction-icon"><use xlink:href="#icon-heart"></use></svg>
+      <span id="like-count"></span>
+    </button>
+    <button aria-controls="pane-shares">
+      <svg class="interaction-icon"><use xlink:href="#icon-share"></use></svg>
+      <span id="share-count"></span>
+    </button>
+  </div>
+  <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
+    <h3>Replies</h3>
+    <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/" />
+      <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
+      <div class="inline-form__inputs">
+        <input type="text" id="reply-url" name="source" />
+        <button type="submit" id="webmention-submit">Send Webmention</button>
+      </div>
+      <p class="form-alert is-hidden"></p>
+    </form>
+    <ul class="replies" id="replies"></ul>
+  </div>
+  <div class="tab-pane" id="pane-likes" aria-controlled-by="tab-likes">
+    <h3>Likes</h3>
+    <ul class="replies" id="likes"></ul>
+  </div>
+  <div class="tab-pane" id="pane-shares" aria-controlled-by="tab-shares">
+    <h3>Shares</h3>
+    <ul class="replies" id="shares"></ul>
+  </div>
+</div>
+
+<template id="reply-template">
+  <li class="reply">
+    <img src="" />
+    <div class="reply__body">
+      <div>
+        <a class="reply__author" href=""></a>
+        <a class="reply__date" href=""></a>
+      </div>
+      <div class="content reply__content"></div>
+    </div>
+  </li>
+</template>
+
+<template id="like-template">
+  <li class="reply reply--like">
+    <img src="" />
+    <div class="reply__body">
+      <div>
+        <a class="reply__author" href=""></a>
+        <a class="reply__date" href=""></a>
+      </div>
+    </div>
+  </li>
+</template>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    loadWebmentions("http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/",  null );
+  });
+</script>
+
       
     </article>
   </main>
+
+  
+    <div class="bottom-container">
+  <div class="bottom-container__inner">
+    <h3>Recent posts</h3>
+    <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">More thoughts on CSS in JS</div>
+      </a></li>
+      
+      <li><a href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">A better approach to CSS aspect ratios</div>
+      </a></li>
+      
+      <li><a href="http://keithjgrant.com/posts/2017/01/its-both/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">It’s Both</div>
+      </a></li>
+      
+      <li><a href="http://keithjgrant.com/posts/2017/01/hello-indieweb/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">Hello, World Wide IndieWeb!</div>
+      </a></li>
+      
+    </ul>
+  </div>
+</div>
 
   
   

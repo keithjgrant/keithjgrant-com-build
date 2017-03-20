@@ -123,142 +123,26 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
-            A better approach to CSS aspect ratios
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
+            More thoughts on CSS in JS
           </a>
         </h2>
         <div class="content e-content">
-            
+            <p>At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.</p>
 
-<p>There’s an old hack for creating elements with a fixed aspect ratio that involves using a percentage-based padding. You may be familiar with it. It looks something like this:</p>
+<p>In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.</p>
 
-<pre><code class="language-css">.tile {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 25%;
-  background-color: bisque;
-}
-</code></pre>
+<p>I’ve also had to work on projects coded in ExtJS. These feel about the same way: although you are technically editing a JS file, you aren’t really programming “in JavaScript.” Instead, you are basically coding via configuration. Actual understanding of JavaScript doesn’t help you much.</p>
 
-<p>The element is forced to have no height, then its bottom padding is set to the actual desired height. This produces an element something like this:</p>
+<p>To me, CSS in JS feels the same way. It feels like a tool so a bunch of JavaScript devs can kinda-sorta hack together styles without actually having to write CSS. Except the syntax is more clunky and you have taken away the cascade. (And, yet, surprise! You still need to learn the most complicated parts of CSS.)</p>
 
-<figure class="-demo-container">
-  <div class="-demo1">
-    4:1 aspect ratio
-  </div>
-</figure>
+<p>Now I’ll be fair, CSS in JS libraries typically provide a much thinner buffer between you and the actual CSS when compared to PrimeFaces. But still… it’s an abstraction layer. It gives the illusion of writing styles in perfect isolation, but inheritance still takes place and can interfere. It gets between me and the code I want actual control over.</p>
 
-<p>This works because of a peculiar quirk of padding: Any padding specified in percent computes to a percentage of the element’s <em>width</em>&mdash;even if it is a top or bottom padding. (The same is true for margin as well.) This is a bit counter-intuitive, but it comes in handy. I think the original reasoning was so you could declare something like <code>padding: 5%</code> and get an equal padding on all four sides of the element, regardless of its shape.</p>
+<p>I know what I’m doing when I code CSS. I <em>want</em> the cascade in many instances; removing it feels crippling. I won’t deny CSS in JS offers some benefits. But they are benefits I am not convinced I need at a cost I am not sure I want to pay.</p>
 
-<p>Of course, this approach has a problem: overflow is cut off:</p>
+<p>I won’t say it’s the wrong choice for everyone. Some folks who really do grok CSS are in favor of it. Sometimes ExtJS is the right choice (don’t quote me on that). But dang, please know it’s a compromise that someone might have to clean up down the road.</p>
 
-<figure class="-demo-container">
-  <div class="-demo1">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
-  </div>
-</figure>
-
-<p>This approach creates fixed height of the element, which in CSS is an anti-pattern. For this reason, I’ve always felt dirty using it.</p>
-
-<h2 id="dealing-with-overflow">Dealing with overflow</h2>
-
-<p>A while back, I stumbled across an approach that is similar, but prevents the overflow problem. Instead of setting our element’s height, we can set the height on a floated <code>::before</code> pseudo-element. Watch what happens when we do this:</p>
-
-<pre><code class="language-css">.tile {
-  background-color: darkseagreen;
-}
-.tile::before {
-  content: &quot;&quot;;
-  float: left;
-  padding-bottom: 25%;
-}
-.tile::after {
-  clear: left;
-  content: &quot; &quot;;
-  display: table;
-}
-</code></pre>
-
-<p>The <code>::after</code> is just a familiar clearfix. This produces a very similar result:</p>
-
-<figure class="-demo-container">
-  <div class="-demo2">
-    4:1 aspect ratio
-  </div>
-</figure>
-
-<p>However, the element will still grow to contain overflow if necessary:</p>
-
-<figure class="-demo-container">
-  <div class="-demo2">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
-  </div>
-</figure>
-
-<h2 id="how-it-works">How it works</h2>
-
-<p>The trick is, instead of explicitly controlling (and thus limiting) the height of the element, we set a known height on the floated pseudo element. By using a padding-based percentage, this will be a ratio of the element’s width. We float it left and leave it empty, producing a width of zero. Here is the floated element, with a black outline added:</p>
-
-<figure class="-demo-container">
-  <div class="-demo3">
-    Floated pseudo element provides a min height to the element.
-  </div>
-</figure>
-
-<p>Then, in the <code>::after</code> pseudo-element, we clear the float, forcing the element to grow to contain the floated <code>::before</code>. Since the float has a width of 0, it doesn’t interfere with the content layout in any way.  And when the content extends below the bottom of the float, the box simply grows naturally to contain it:</p>
-
-<figure class="-demo-container">
-  <div class="-demo3">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet tellus ut erat egestas vestibulum. Aliquam erat volutpat. Fusce ut nibh quis lectus fermentum aliquet. Suspendisse potenti.
-  </div>
-</figure>
-
-<style>
-  .-demo-container {
-    max-width: 300px;
-    line-height: 1.6;
-  }
-
-  .-demo1 {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 25%;
-    background-color: bisque;
-  }
-
-  .-demo2 {
-    background-color: darkseagreen;
-    line-height: 1.6;
-  }
-  .-demo2::before {
-    content: "";
-    float: left;
-    padding-bottom: 25%;
-  }
-  .-demo2::after {
-    clear: left;
-    content: " ";
-    display: table;
-  }
-
-  .-demo3 {
-    background-color: darkseagreen;
-    line-height: 1.6;
-  }
-  .-demo3::before {
-    content: "";
-    float: left;
-    padding-bottom: 25%;
-    border: 1px solid black;
-  }
-  .-demo3::after {
-    clear: left;
-    content: " ";
-    display: table;
-  }
-</style>
-
-          <p class="post-date">14 Mar 2017</p>
+          <p class="post-date">20 Mar 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -282,7 +166,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/aspect-ratios/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -329,7 +213,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/03/aspect-ratios/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/",  null );
   });
 </script>
 
@@ -341,6 +225,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">More thoughts on CSS in JS</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -355,11 +244,6 @@
       <li><a href="http://keithjgrant.com/posts/2017/01/hello-indieweb/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">Hello, World Wide IndieWeb!</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2016/12/separation-of-concerns/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">Let’s Talk About Separation of Concerns</div>
       </a></li>
       
     </ul>
