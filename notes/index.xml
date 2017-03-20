@@ -8,9 +8,18 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Mar 2017 13:22:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Mar 2017 20:32:34 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/03/73954/</link>
+      <pubDate>Mon, 20 Mar 2017 20:32:34 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/03/73954/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -100,16 +109,6 @@
       <description>&lt;p&gt;This is why software is never done. The old days of boxed packaging must have been a nightmare.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/mathowie/status/837735473745289218&#34;&gt;https://twitter.com/mathowie/status/837735473745289218&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/03/73187/</link>
-      <pubDate>Thu, 02 Mar 2017 20:19:47 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/03/73187/</guid>
-      <description>&lt;p&gt;Always amazed to realize how little CSS actually needs prefixes anymore&lt;/p&gt;
 </description>
     </item>
     
