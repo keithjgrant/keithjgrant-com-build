@@ -8,9 +8,26 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Mar 2017 17:46:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Mar 2017 18:03:32 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/03/65012/</link>
+      <pubDate>Wed, 29 Mar 2017 18:03:32 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/03/65012/</guid>
+      <description>&lt;p&gt;I get that &amp;lt;a href=&amp;quot;&lt;a href=&#34;https://medium.com/@isaaclyman/8-css-gotchas-to-start-your-morning-off-right-c5daade0731d&amp;quot;&amp;gt;this&#34;&gt;https://medium.com/@isaaclyman/8-css-gotchas-to-start-your-morning-off-right-c5daade0731d&amp;quot;&amp;gt;this&lt;/a&gt; is satire&amp;lt;/a&amp;gt;. I’m fine with satire, in general. But the fact that this particular satire resonates with so many people indicates to me that one of the following is true:&lt;/p&gt;
+
+&lt;p&gt;1) We have royally screwed up the teaching of CSS.
+2) Web devs are terrible at taking the time to learn how CSS works.&lt;/p&gt;
+
+&lt;p&gt;It’s probably both. And yes, some of the earlier stuff is not immediately intuitive: floats, vertical-align, etc. But it is understandable. You can make sense of this stuff.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to see devs throwing their hands up in the air… If this stuff is discouraging to you, please take some time to read up on it. Stop trying to hack through the brush alone. There are great resources available (p.s. I’m writing one!)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -115,28 +132,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/03/73775/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>More thoughts on CSS in JS</title>
-      <link>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</link>
-      <pubDate>Mon, 20 Mar 2017 15:07:49 -0400</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</guid>
-      <description>&lt;p&gt;At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.&lt;/p&gt;
-
-&lt;p&gt;In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.&lt;/p&gt;
-
-&lt;p&gt;I’ve also had to work on projects coded in ExtJS. These feel about the same way: although you are technically editing a JS file, you aren’t really programming “in JavaScript.” Instead, you are basically coding via configuration. Actual understanding of JavaScript doesn’t help you much.&lt;/p&gt;
-
-&lt;p&gt;To me, CSS in JS feels the same way. It feels like a tool so a bunch of JavaScript devs can kinda-sorta hack together styles without actually having to write CSS. Except the syntax is more clunky and you have taken away the cascade. (And, yet, surprise! You still need to learn the most complicated parts of CSS.)&lt;/p&gt;
-
-&lt;p&gt;Now I’ll be fair, CSS in JS libraries typically provide a much thinner buffer between you and the actual CSS when compared to PrimeFaces. But still… it’s an abstraction layer. It gives the illusion of writing styles in perfect isolation, but inheritance still takes place and can interfere. It gets between me and the code I want actual control over.&lt;/p&gt;
-
-&lt;p&gt;I know what I’m doing when I code CSS. I &lt;em&gt;want&lt;/em&gt; the cascade in many instances; removing it feels crippling. I won’t deny CSS in JS offers some benefits. But they are benefits I am not convinced I need at a cost I am not sure I want to pay.&lt;/p&gt;
-
-&lt;p&gt;I won’t say it’s the wrong choice for everyone. Some folks who really do grok CSS are in favor of it. Sometimes ExtJS is the right choice (don’t quote me on that). But dang, please know it’s a compromise that someone might have to clean up down the road.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
