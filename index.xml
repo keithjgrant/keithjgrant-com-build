@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2017 15:02:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2017 20:25:46 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/03/73546/</link>
+      <pubDate>Thu, 30 Mar 2017 20:25:46 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/03/73546/</guid>
+      <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -100,23 +110,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/03/70522/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/03/65012/</link>
-      <pubDate>Wed, 29 Mar 2017 18:03:32 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/03/65012/</guid>
-      <description>&lt;p&gt;I get that &lt;a href=&#34;https://medium.com/@isaaclyman/8-css-gotchas-to-start-your-morning-off-right-c5daade0731d&#34;&gt;this is satire&lt;/a&gt;. I’m fine with satire, in general. But the fact that this particular satire resonates with so many people indicates to me that one of the following is true:&lt;/p&gt;
-
-&lt;p&gt;1) We have royally screwed up the teaching of CSS.
-2) Web devs are terrible at taking the time to learn how CSS works.&lt;/p&gt;
-
-&lt;p&gt;It’s probably both. And yes, some of the earlier stuff is not immediately intuitive: floats, vertical-align, etc. But it is understandable. You can make sense of this stuff.&lt;/p&gt;
-
-&lt;p&gt;It’s hard to see devs throwing their hands up in the air… If this stuff is discouraging to you, please take some time to read up on it. Stop trying to hack through the brush alone. There are great resources available (p.s. I’m writing one!)&lt;/p&gt;
-</description>
     </item>
     
   </channel>
