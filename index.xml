@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2017 12:53:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2017 14:26:32 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/03/51992/</link>
+      <pubDate>Thu, 30 Mar 2017 14:26:32 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/03/51992/</guid>
+      <description>&lt;p&gt;You should get on the indieweb, dan 😉&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -103,35 +113,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/03/48093/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>CSS is Not Broken</title>
-      <link>http://keithjgrant.com/posts/2017/03/css-is-not-broken/</link>
-      <pubDate>Fri, 24 Mar 2017 14:15:34 -0400</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2017/03/css-is-not-broken/</guid>
-      <description>&lt;p&gt;Coding in any language is hard before you spend time mastering it. Imagine what your JavaScript would look like if you never took the time to learn about OOP or functional programming principles? Just because you &lt;em&gt;expect&lt;/em&gt; CSS to be easy, doesn’t mean the language is broken when you find it is not.&lt;/p&gt;
-
-&lt;p&gt;A lot of people have &lt;a href=&#34;https://simpleprogrammer.com/2013/05/06/why-javascript-is-doomed/&#34;&gt;gone on about&lt;/a&gt; &lt;a href=&#34;https://medium.com/smalltalk-talk/the-three-worst-programming-languages-b1ec25a232c1#e848&#34;&gt;how horrible JavaScript is&lt;/a&gt;. JavaScript is not horrible. It is an incredible language. It has a few odd quirks, just as CSS does. But if you take the time to actually understand these quirks, you will reap huge reward.&lt;/p&gt;
-
-&lt;p&gt;You cannot be proficient in JavaScript until you understand coercion, prototypal inheritance, and asyncronous flow control. Likewise, in CSS, you have to understand the cascade, inheritance, and the box model. Once you have those down, take a deeper look at the various layout methods. Do you know what stacking contexts and block formatting contexts are? Do you know why setting a height on an element leads to problems and how to accomplish what you need without doing so?&lt;/p&gt;
-
-&lt;p&gt;CSS is hard. But this is not because the language is faulty. Rather, the difficulty lies in what the language seeks to accomplish. I’ve heard many developers say they wish they could “throw out CSS and start over with something better.” I think this betrays a fundamental misunderstanding of the purpose of the language:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;When you code CSS, you’re writing abstract rules to take &lt;em&gt;unknown&lt;/em&gt; content and organize it in an &lt;em&gt;unknown&lt;/em&gt; medium. That shit is hard.&lt;/p&gt;&amp;mdash; keith•j•grant (@keithjgrant) &lt;a href=&#34;https://twitter.com/keithjgrant/status/842728744653676544&#34;&gt;March 17, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Furthermore, CSS isn’t just code, it’s also part of the design. A &lt;a href=&#34;https://snook.ca/archives/html_and_css/css-concerns&#34;&gt;vital concern of CSS is consistency&lt;/a&gt;. You should want “global” styles: colors and spacing should be consistent throughout your application. Similar components need to look similar. Your buttons should all be consistently sized and your box shadows or border radiuses should not be ad-hoc.&lt;/p&gt;
-
-&lt;p&gt;I find it ironic that developers who bemoan the “global” nature of CSS are usually the ones who run into specificity problems because they unnecessarily scope their styles to particular parts of a particular page. When you have selectors like &lt;code&gt;#directory .sorted .sidebar :nth-child(2) button&lt;/code&gt;, your problem isn’t that CSS is global. Your CSS isn’t global enough!&lt;/p&gt;
-
-&lt;p&gt;The next thing you know, you find yourself using &lt;code&gt;!important&lt;/code&gt; to correct specificity problems. This is a red flag that you need to stop and learn the cascade. You can use &lt;code&gt;!important&lt;/code&gt; to sweep specificity problems under the rug once. But you will soon need it a second time, at which point you will face the same specificity problem all over again.&lt;/p&gt;
-
-&lt;p&gt;Design your styles so they can be reused, anywhere in the app. Learn SMACSS and BEM. And don’t stop because you understand the “naming system”&amp;mdash;these methodologies are about far more than double-underscores and double-hyphens. They are about code organization, reuse, and refactoring. They are the solution to dead code elimination. They offer ways to utilize the cascade instead of fearing it. They allow you to know precisely where in your code you can find a certain set of styles.&lt;/p&gt;
-
-&lt;p&gt;CSS isn’t broken. But it does require &lt;a href=&#34;https://www.manning.com/books/css-in-depth&#34;&gt;study and skill&lt;/a&gt;. It does require careful thought. As with anything in programming, you can make a mess of the code. Sure, blaming the language is the easy way out. But when your JavaScript is confusing and buggy, you know it’s not the language’s fault.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
