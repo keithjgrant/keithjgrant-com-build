@@ -20,19 +20,12 @@
       <guid>http://keithjgrant.com/replies/2017/03/7116/</guid>
       <description>&lt;p&gt;You have a few options, but none are perfect. Honestly, this is what grid is for (though, in this instance, a sub-grid would be ideal, but that isn&amp;#39;t implemented yet).&lt;/p&gt;
 
-&lt;p&gt;A couple possibilities w/ the current setup:
-1) set a min-height on the title, equal to either 2 or 3 lines of text. Downside: would produces a gap below the titles when none of them wrap; it also will still fall out of alignment if you wrap more times than that.
-2) put a margin-top: auto on the description. This will push it down to the bottom of its flex container. But this will knock it out of alignment w/ the &amp;quot;special&amp;quot; item&amp;hellip; so you would have to put a dummy (invisible) placeholder there for items without a &amp;quot;special.&amp;quot;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/03/73546/</link>
-      <pubDate>Thu, 30 Mar 2017 20:25:46 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/03/73546/</guid>
-      <description>&lt;p&gt;test&lt;/p&gt;
+&lt;p&gt;A couple possibilities w/ the current setup:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;set a min-height on the title, equal to either 2 or 3 lines of text. Downside: would produces a gap below the titles when none of them wrap; it also will still fall out of alignment if you wrap more times than that.&lt;/li&gt;
+&lt;li&gt;put a margin-top: auto on the description. This will push it down to the bottom of its flex container. But this will knock it out of alignment w/ the &amp;quot;special&amp;quot; item&amp;hellip; so you would have to put a dummy (invisible) placeholder there for items without a &amp;quot;special.&amp;quot;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -114,6 +107,15 @@
       <pubDate>Thu, 30 Mar 2017 12:53:37 +0000</pubDate>
       
       <guid>http://keithjgrant.com/likes/2017/03/46417/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/likes/2017/03/70522/</link>
+      <pubDate>Wed, 29 Mar 2017 19:35:22 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/likes/2017/03/70522/</guid>
       <description></description>
     </item>
     
