@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2017 14:16:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Apr 2017 15:26:13 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/04/55573/</link>
+      <pubDate>Mon, 03 Apr 2017 15:26:13 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/04/55573/</guid>
+      <description>&lt;p&gt;I’m more into one social network that spans all of the internet a la @SocialWebWG ;)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -105,15 +115,6 @@
 &lt;li&gt;put a margin-top: auto on the description. This will push it down to the bottom of its flex container. But this will knock it out of alignment w/ the &amp;quot;special&amp;quot; item&amp;hellip; so you would have to put a dummy (invisible) placeholder there for items without a &amp;quot;special.&amp;quot;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/likes/2017/03/54156/</link>
-      <pubDate>Thu, 30 Mar 2017 15:02:36 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/likes/2017/03/54156/</guid>
-      <description></description>
     </item>
     
   </channel>
