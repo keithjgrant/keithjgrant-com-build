@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2017 14:13:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Apr 2017 14:16:23 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/04/51383/</link>
+      <pubDate>Mon, 03 Apr 2017 14:16:23 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/04/51383/</guid>
+      <description>&lt;p&gt;To be fair, I’m not fundamentally opposed to putting things in the same file (I love React &amp;amp; JSX!), but we need to ensure people w/ the relevant skills are reviewing the code we put out.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -104,16 +114,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/03/54156/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/03/53506/</link>
-      <pubDate>Thu, 30 Mar 2017 14:51:46 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/03/53506/</guid>
-      <description>&lt;p&gt;It’s about more than content ownership. It’s also about owning the experience: integrating “social network” into the browser, making it easy to share links and follow people. We’ve got an eye on &lt;a href=&#34;https://cleverdevil.io/2017/user-experience-and-the-indieweb&#34;&gt;user experience&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
