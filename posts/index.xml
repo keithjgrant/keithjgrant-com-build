@@ -8,9 +8,29 @@
     <description>Recent content in Posts on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Mar 2017 14:15:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Apr 2017 15:45:07 -0400</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/posts/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title>Don’t QWOP Your Way Through CSS</title>
+      <link>http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</link>
+      <pubDate>Fri, 07 Apr 2017 15:45:07 -0400</pubDate>
+      
+      <guid>http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.foddy.net/Athletics.html&#34;&gt;QWOP&lt;/a&gt;, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W, O, and P will each extend one leg or bend one knee. Coordinating them all is incredibly difficult, and you are usually lucky if you can make a full stride before falling on your head.&lt;/p&gt;
+
+&lt;p&gt;This is also how a lot of developers treat CSS. Instead of thinking constructing a robust system, they focus on only one specific part of the desired result. Instead of asking, “How do I run?”, they ask, “How do I flex my knee?” I can teach you how to flex your knee, but if QWOP teaches us anything, that knowledge might actually make running more difficult.&lt;/p&gt;
+
+&lt;p&gt;CSS does a lot of work for you, if you will let it. Normal document flow ensures things all fit together on the page; this is why you should be judicious with positioning. It automatically sizes your elements to contain their text; this is why you should avoid explicitly setting height. Relative units allow you to define one value in terms of another so they will respond together if the context changes; this is why I frown on pixel units. Margins collapse so that paragraphs stack with the correct spacing. Certain properties inherit down the DOM tree so you don’t have to specify a font for every single element.&lt;/p&gt;
+
+&lt;p&gt;You can get down to the “bare metal” in CSS, if you want. You can specify absolute positions for everything and set explicit heights and define every single value in pixels. You can override inheritance. But in the end, this will make more work for yourself.&lt;/p&gt;
+
+&lt;p&gt;The next time you find yourself asking something like, “How do I vertically center this?”, take a step back. Are you having trouble because you set the height on something? Why did you set a height? What are you &lt;em&gt;actually&lt;/em&gt; trying to achieve? Instead of focusing on a specific metric, think about the system as a whole: maybe you want several items to all have the same height. Now, the problem is defined in terms of some desired &lt;a href=&#34;https://www.youtube.com/watch?v=TGHbkTGVqoU&#34;&gt;system behavior&lt;/a&gt;. Solve for that: flexbox or grid can align multiple elements with the same height (they can also center the contents within, too).&lt;/p&gt;
+
+&lt;p&gt;The automatic behaviors of CSS aren’t always apparent if you aren’t familiar with them. They can result in weird outcomes, and you will be frustrated by them. So, I think, the first tendency is to find a way to turn off this “help.” Don’t. Learn how to solve for system behaviors. Trust CSS; it does good things for you if you let it. Unless you like running by pressing Q, W, O, and P.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>CSS is Not Broken</title>
@@ -417,52 +437,6 @@ render() {
 &lt;/ul&gt;
 
 &lt;p&gt;Let&amp;rsquo;s not allow this to die.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Quest for Interchangeable Parts</title>
-      <link>http://keithjgrant.com/posts/2016/02/a-quest-for-interchangeable-parts/</link>
-      <pubDate>Sat, 06 Feb 2016 00:00:00 -0500</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2016/02/a-quest-for-interchangeable-parts/</guid>
-      <description>
-
-&lt;p&gt;This is a bolt. &lt;img class=&#34;float-right&#34; src=&#34;http://keithjgrant.com/images/2016/m20-bolt.jpg&#34; height=&#34;200&#34; width=&#34;200&#34; alt=&#34;bolt&#34;&gt; You may not realize it, but it is a modern marvel. It is a 150mm bolt with an M20 threading. It works in any piece of hardware that is cut with the same size and threading. It can be turned with any 30mm hex wrench. You can reach into a pile of M20-2.50 nuts, made by any manufacturer, pull any one out, and it will fit this bolt.&lt;/p&gt;
-
-&lt;p&gt;This is because of a key principle that made the industrial revolution possible: &lt;a href=&#34;https://en.wikipedia.org/wiki/Interchangeable_parts&#34;&gt;interchangeable parts&lt;/a&gt;. It took countless inventors over the course of hundreds of years to perfect the manufacturing necessary for this. Many people, such as Eli Whitney and Samuel Colt, devoted years of their lives and a great amount of resources in the quest to achieve it.&lt;/p&gt;
-
-&lt;p&gt;Before their efforts, everything had to be hand-made for the particular project. Every gun was uniquely crafted. Every piece of rigging on a ship. And if a part broke, you couldn’t just buy a replacement; one had to be hand-made to fit the parts it integrated with&amp;hellip; or the entire device had to be replaced.&lt;/p&gt;
-
-&lt;h2 id=&#34;learn-from-history&#34;&gt;Learn from history&lt;/h2&gt;
-
-&lt;p&gt;This is a tweet. &lt;img src=&#34;http://keithjgrant.com/images/2016/tweet.png&#34; alt=&#34;screenshot of tweet&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;You may not realize it, but it is stuck in the pre-industrial age. Because it is not an interchangeable part. It doesn’t fit into a Facebook wall, or onto a YouTube page.&lt;/p&gt;
-
-&lt;p&gt;Sure, it’s &lt;em&gt;almost&lt;/em&gt; interchangeable. You can post a link to its url in most places, or a screenshot of the tweet. Or you can copy the text and give attribution. But it does not interoperate with other social networks. You can’t retweet it or like it from anywhere but a limited number of places: an embedded tweet (put there by a script provided by Twitter) or a third-party app that uses Twitter’s API. This is because Twitter has a vested interest in keeping a tight reign on where and how a tweet can, and cannot, be used.&lt;/p&gt;
-
-&lt;p&gt;Our digital world is full of these semi-interchangeable parts. You can buy an album from iTunes or Amazon or Google Play. However, if you assemble your music collection using two or more of these, you have to jump through some hoops to keep it all in one place and to sync it to your phone.&lt;/p&gt;
-
-&lt;p&gt;You can subscribe to Hulu and Netflix and Amazon Prime, but you can’t just tune into them on any TV: you need to use something like a Roku that brings them all together. Nothing is standardized.&lt;/p&gt;
-
-&lt;h2 id=&#34;a-better-way&#34;&gt;A better way&lt;/h2&gt;
-
-&lt;p&gt;Netflix has to build an app for iOS, an app for Android, an app for Roku and Apple TV and the Amazon Fire Stick. They do all this just so users of those devices can tune in to their service. What if, instead, they just produced their content in a single, standardized web format. Imagine if HBO and Hulu broadcast in the same format. Imagine if subscribers merely had to tune in their TVs to the right “channel” watch. No Apple TV or Roku necessary. Like broadcast television.&lt;/p&gt;
-
-&lt;p&gt;iTunes keeps an iron grip on the whole pipeline of your music: the financial transaction, the download, the files on your hard drive, the sync to your Apple device. What if, instead, iTunes or Amazon were just a store, and they all provided music in the same format for you to save wherever you choose, and sync however you choose. Like it a CD.&lt;/p&gt;
-
-&lt;p&gt;What if, instead of “following” your friend Joseph on Twitter, you could just follow &lt;em&gt;Joseph&lt;/em&gt;. He could tweet on Twitter or post to Facebook and you would get it, on the social network of your choosing, that offers the controls and options you like. There would be a single, common digital format for a social media post, that worked on all networks. You could be on Twitter or Google Plus, and read his updates, wherever they came from. Like email.&lt;/p&gt;
-
-&lt;h2 id=&#34;an-open-web&#34;&gt;An open web&lt;/h2&gt;
-
-&lt;p&gt;Unlike the centuries-long quest for interchangeable parts in manufacturing, there is nothing technically holding us back from this. We might need to hash out what these standards look like, but that is relatively easy. The forces holding us back are more capitalistic&amp;mdash;or rather, &lt;em&gt;monopolistic&lt;/em&gt;. Because the world of open standards I just described would be a much more open, free market: a level playing field where far more companies could innovate and compete, rather than just a small handful of big players. It would be a world where users had more choices and more control over their media, and where they didn’t have to put up with so much headache.&lt;/p&gt;
-
-&lt;p&gt;Has the digital age made life easier? Absolutely. I don’t want to go back to broadcast television or CDs. While email still serves a purpose, it’s different than that of social media.&lt;/p&gt;
-
-&lt;p&gt;But the digital age has still not matured. We need interchangeable parts. It will take some concerted effort to break through the barriers holding us back. I admit don’t know precisely how to do that. But, just as we pushed through the difficulties that held back physical manufacturing in centuries past and ushered in the industrial revolution, we can break through these, and usher in a new digital revolution. The modern digital life is still more complicated than it need be.&lt;/p&gt;
-
-&lt;p&gt;The Internet may be the first true write-once-run-anywhere platform, but as long as these industries are shackled by proprietary lock-in, these parts of the web aren’t open. An open web requires interchangeable parts.&lt;/p&gt;
 </description>
     </item>
     

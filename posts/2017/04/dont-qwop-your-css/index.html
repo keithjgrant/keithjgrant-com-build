@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>It’s Both</title>
+<title>Don’t QWOP Your Way Through CSS</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,8 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="It’s Both">
-<meta name="twitter:description" content="I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems">
+<meta name="og:title" content="Don’t QWOP Your Way Through CSS">
+<meta name="twitter:description" content="QWOP, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W,">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,7 +37,7 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/posts/2017/01/its-both/">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
 
 <link rel="stylesheet" href="/css/style.css?v=2">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
@@ -118,7 +118,7 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/01/its-both/">It’s Both</a></h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">Don’t QWOP Your Way Through CSS</a></h1>
     </div>
     <article class="post-body">
       <div>
@@ -129,41 +129,23 @@
         
 
         <div class="e-content content show-embeds">
-            
+            <p><a href="http://www.foddy.net/Athletics.html">QWOP</a>, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W, O, and P will each extend one leg or bend one knee. Coordinating them all is incredibly difficult, and you are usually lucky if you can make a full stride before falling on your head.</p>
 
-<p>I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems of software architecture.</p>
+<p>This is also how a lot of developers treat CSS. Instead of thinking constructing a robust system, they focus on only one specific part of the desired result. Instead of asking, “How do I run?”, they ask, “How do I flex my knee?” I can teach you how to flex your knee, but if QWOP teaches us anything, that knowledge might actually make running more difficult.</p>
 
-<p>I’m also (in case you <a href="https://www.manning.com/books/css-in-depth">somehow missed it</a>) a “CSS Guy”. I learned CSS during its infancy in the mid-nineties and have worked to stay up to speed ever since.</p>
+<p>CSS does a lot of work for you, if you will let it. Normal document flow ensures things all fit together on the page; this is why you should be judicious with positioning. It automatically sizes your elements to contain their text; this is why you should avoid explicitly setting height. Relative units allow you to define one value in terms of another so they will respond together if the context changes; this is why I frown on pixel units. Margins collapse so that paragraphs stack with the correct spacing. Certain properties inherit down the DOM tree so you don’t have to specify a font for every single element.</p>
 
-<p>When I look out at the industry today, it kind of feels <a href="https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#1e2d">like</a> <a href="http://mrmrs.io/writing/2016/03/24/scalable-css/">watching</a> <a href="http://www.zeldman.com/2017/01/03/kiss-my-classname/">parents</a> <a href="https://twitter.com/thejameskyle/status/824795012680421376">fight</a>. And I’ll admit it, I’ve <a href="/posts/2015/05/against-css-in-js/">contributed to the problem</a>. But the more I watch this unfold, the more I feel like we have two camps, talking right past one another, and no meeting in the middle. Both are missing the points the other is trying to make. So I’m shifting my stance:</p>
+<p>You can get down to the “bare metal” in CSS, if you want. You can specify absolute positions for everything and set explicit heights and define every single value in pixels. You can override inheritance. But in the end, this will make more work for yourself.</p>
 
-<h2 id="we-re-both-right">We’re both right</h2>
+<p>The next time you find yourself asking something like, “How do I vertically center this?”, take a step back. Are you having trouble because you set the height on something? Why did you set a height? What are you <em>actually</em> trying to achieve? Instead of focusing on a specific metric, think about the system as a whole: maybe you want several items to all have the same height. Now, the problem is defined in terms of some desired <a href="https://www.youtube.com/watch?v=TGHbkTGVqoU">system behavior</a>. Solve for that: flexbox or grid can align multiple elements with the same height (they can also center the contents within, too).</p>
 
-<p>Writing SPAs is complicated business. The page isn’t just a static document you can slap some styles on and call it a day. What if you need to load content dynamically, and it results in unpredictable source order of your CSS? How do you know if styles for deeply-nested dependencies are already loaded? How do you know when you can delete code?</p>
-
-<p>These are hard problems. You can’t answer them by simply saying “learn CSS”. I personally may not like CSS-in-JS or inline styles, but I do realize they are important experiments. They are quests for answers to these issues. I don’t think they are the ultimate solution. That’s okay. Maybe they will get us to it.</p>
-
-<p>On the other hand, we have whole teams of developers who fundamentally don’t grok CSS. They code up their JavaScript components, then stick the styles they want into the project stylesheet. These may be great developers when it comes to traditional programming languages, but they get really frustrated with layout problems or specificity battles. Compound this with “too many cooks in the kitchen” and you have a real mess.</p>
-
-<p>We have sixty-plus years of industry experience about architecting code in traditional programming languages, but we’ve struggled to apply this stuff to CSS. Only in the last seven years or so have we started to figure out best practices for the language, and we are not doing a great job of disseminating them. When we teach that BEM is a “naming convention” rather emphasize it is a way to architect systems with modular code, thousands of developers miss the point entirely. This only drives them further away because the so-called “best practices” don’t work when they aren’t actually followed.</p>
-
-<p>They don’t understand that BEM is about architecture, not simply namespacing. They don’t see the value of using a pattern library, of centralizing your CSS and imposing order on who controls the CSS rather than treating it like a garbage pile where any random dev can just add haphazard code.</p>
-
-<p>When JavaScript-centric developers hear, “putting your CSS in JavaScript makes it easier” they clamor to get on board. But this must be made absolutely clear: you still need to understand CSS. If you don’t know what a block formatting context is, CSS in JS will not fix your layout issues. If you don’t understand stacking contexts, you will continue to struggle with futile z-index battles. If you don’t learn custom properties or the difference between cascade and inheritance or margin collapsing, these experiments will not really solve the fundamental problem: most teams don’t know how to develop with CSS.</p>
-
-<h2 id="always-bet-on-del-javascript-del-the-open-web">Always bet on <del>JavaScript</del> the Open Web</h2>
-
-<p>So, yes. Hire engineers who know how to deal with system architecture. But also <a href="/posts/2016/10/your-team-needs-a-ux-engineer/">hire someone exclusively for their CSS skills</a>. Put smart people on your team from both camps. Let them work together to solve these problems. Because your problems are unique and your solutions might not look like someone else’s.</p>
-
-<p>I can say with confidence that CSS in JS will pass. In our industry, something new always comes along. The saying is, “Always bet on JavaScript” &mdash; but this isn’t quite right. When it’s JavaScript vs Java or Ruby, yes, bet on JS. JavaScript wins not because it is inherently better; it wins because it is part of the open web platform.</p>
-
-<p>The open web platform always wins. And CSS is part of that platform. It’s not CSS versus JS. It’s CSS <em>plus</em> JS. The platform will evolve. And the platform will win.</p>
+<p>The automatic behaviors of CSS aren’t always apparent if you aren’t familiar with them. They can result in weird outcomes, and you will be frustrated by them. So, I think, the first tendency is to find a way to turn off this “help.” Don’t. Learn how to solve for system behaviors. Trust CSS; it does good things for you if you let it. Unless you like running by pressing Q, W, O, and P.</p>
 
             
           
         </div>
       </div>
-      <p class="post-date metadata text-right"><date class="dt-published">27 Jan 2017 08:54:57</date></p>
+      <p class="post-date metadata text-right"><date class="dt-published">07 Apr 2017 15:45:07</date></p>
       
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -187,7 +169,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/01/its-both/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -234,7 +216,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/01/its-both/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/",  null );
   });
 </script>
 

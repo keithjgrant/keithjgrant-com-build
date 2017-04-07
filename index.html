@@ -123,33 +123,24 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/03/css-is-not-broken/">
-            CSS is Not Broken
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
+            Don’t QWOP Your Way Through CSS
           </a>
         </h2>
         <div class="content e-content">
-            <p>Coding in any language is hard before you spend time mastering it. Imagine what your JavaScript would look like if you never took the time to learn about OOP or functional programming principles? Just because you <em>expect</em> CSS to be easy, doesn’t mean the language is broken when you find it is not.</p>
+            <p><a href="http://www.foddy.net/Athletics.html">QWOP</a>, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W, O, and P will each extend one leg or bend one knee. Coordinating them all is incredibly difficult, and you are usually lucky if you can make a full stride before falling on your head.</p>
 
-<p>A lot of people have <a href="https://simpleprogrammer.com/2013/05/06/why-javascript-is-doomed/">gone on about</a> <a href="https://medium.com/smalltalk-talk/the-three-worst-programming-languages-b1ec25a232c1#e848">how horrible JavaScript is</a>. JavaScript is not horrible. It is an incredible language. It has a few odd quirks, just as CSS does. But if you take the time to actually understand these quirks, you will reap huge reward.</p>
+<p>This is also how a lot of developers treat CSS. Instead of thinking constructing a robust system, they focus on only one specific part of the desired result. Instead of asking, “How do I run?”, they ask, “How do I flex my knee?” I can teach you how to flex your knee, but if QWOP teaches us anything, that knowledge might actually make running more difficult.</p>
 
-<p>You cannot be proficient in JavaScript until you understand coercion, prototypal inheritance, and asyncronous flow control. Likewise, in CSS, you have to understand the cascade, inheritance, and the box model. Once you have those down, take a deeper look at the various layout methods. Do you know what stacking contexts and block formatting contexts are? Do you know why setting a height on an element leads to problems and how to accomplish what you need without doing so?</p>
+<p>CSS does a lot of work for you, if you will let it. Normal document flow ensures things all fit together on the page; this is why you should be judicious with positioning. It automatically sizes your elements to contain their text; this is why you should avoid explicitly setting height. Relative units allow you to define one value in terms of another so they will respond together if the context changes; this is why I frown on pixel units. Margins collapse so that paragraphs stack with the correct spacing. Certain properties inherit down the DOM tree so you don’t have to specify a font for every single element.</p>
 
-<p>CSS is hard. But this is not because the language is faulty. Rather, the difficulty lies in what the language seeks to accomplish. I’ve heard many developers say they wish they could “throw out CSS and start over with something better.” I think this betrays a fundamental misunderstanding of the purpose of the language:</p>
+<p>You can get down to the “bare metal” in CSS, if you want. You can specify absolute positions for everything and set explicit heights and define every single value in pixels. You can override inheritance. But in the end, this will make more work for yourself.</p>
 
-<p><blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">When you code CSS, you’re writing abstract rules to take <em>unknown</em> content and organize it in an <em>unknown</em> medium. That shit is hard.</p>&mdash; keith•j•grant (@keithjgrant) <a href="https://twitter.com/keithjgrant/status/842728744653676544">March 17, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>The next time you find yourself asking something like, “How do I vertically center this?”, take a step back. Are you having trouble because you set the height on something? Why did you set a height? What are you <em>actually</em> trying to achieve? Instead of focusing on a specific metric, think about the system as a whole: maybe you want several items to all have the same height. Now, the problem is defined in terms of some desired <a href="https://www.youtube.com/watch?v=TGHbkTGVqoU">system behavior</a>. Solve for that: flexbox or grid can align multiple elements with the same height (they can also center the contents within, too).</p>
 
-<p>Furthermore, CSS isn’t just code, it’s also part of the design. A <a href="https://snook.ca/archives/html_and_css/css-concerns">vital concern of CSS is consistency</a>. You should want “global” styles: colors and spacing should be consistent throughout your application. Similar components need to look similar. Your buttons should all be consistently sized and your box shadows or border radiuses should not be ad-hoc.</p>
+<p>The automatic behaviors of CSS aren’t always apparent if you aren’t familiar with them. They can result in weird outcomes, and you will be frustrated by them. So, I think, the first tendency is to find a way to turn off this “help.” Don’t. Learn how to solve for system behaviors. Trust CSS; it does good things for you if you let it. Unless you like running by pressing Q, W, O, and P.</p>
 
-<p>I find it ironic that developers who bemoan the “global” nature of CSS are usually the ones who run into specificity problems because they unnecessarily scope their styles to particular parts of a particular page. When you have selectors like <code>#directory .sorted .sidebar :nth-child(2) button</code>, your problem isn’t that CSS is global. Your CSS isn’t global enough!</p>
-
-<p>The next thing you know, you find yourself using <code>!important</code> to correct specificity problems. This is a red flag that you need to stop and learn the cascade. You can use <code>!important</code> to sweep specificity problems under the rug once. But you will soon need it a second time, at which point you will face the same specificity problem all over again.</p>
-
-<p>Design your styles so they can be reused, anywhere in the app. Learn SMACSS and BEM. And don’t stop because you understand the “naming system”&mdash;these methodologies are about far more than double-underscores and double-hyphens. They are about code organization, reuse, and refactoring. They are the solution to dead code elimination. They offer ways to utilize the cascade instead of fearing it. They allow you to know precisely where in your code you can find a certain set of styles.</p>
-
-<p>CSS isn’t broken. But it does require <a href="https://www.manning.com/books/css-in-depth">study and skill</a>. It does require careful thought. As with anything in programming, you can make a mess of the code. Sure, blaming the language is the easy way out. But when your JavaScript is confusing and buggy, you know it’s not the language’s fault.</p>
-
-          <p class="post-date">24 Mar 2017</p>
+          <p class="post-date">07 Apr 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -173,7 +164,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/css-is-not-broken/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -220,7 +211,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/03/css-is-not-broken/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/",  null );
   });
 </script>
 
@@ -232,6 +223,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">Don’t QWOP Your Way Through CSS</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/03/css-is-not-broken/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -246,11 +242,6 @@
       <li><a href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">A better approach to CSS aspect ratios</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/01/its-both/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">It’s Both</div>
       </a></li>
       
     </ul>
