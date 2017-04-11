@@ -8,9 +8,25 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2017 12:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Apr 2017 17:29:41 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/04/62981/</link>
+      <pubDate>Tue, 11 Apr 2017 17:29:41 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/04/62981/</guid>
+      <description>&lt;p&gt;I feel like a guy yelling, “don’t drive on the sidewalk because people should be able to walk there” and your response is “nobody walks on the sidewalk because everybody drives there.”&lt;/p&gt;
+
+&lt;p&gt;Anyway, the larger point is: driving on the road is &lt;em&gt;better.&lt;/em&gt; And I would argue using relative units is better in many cases. Why? Because the code maintenance is easier. True, using px requires less thought up front. But if you use relative units, you can define systems that work together better as a whole.&lt;/p&gt;
+
+&lt;p&gt;You can change a few inputs and have the entire system respond. You can define things in terms of your fonts, because your fonts are an integral part of the design. With pixels, small changes in the future can require code changes all over your code to adapt to that change. With units, done right, one small change can update the entire system accordingly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/&#34;&gt;http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -108,16 +124,6 @@
       
       <guid>http://keithjgrant.com/replies/2017/04/359/</guid>
       <description>&lt;p&gt;I’d love to hear the takeaways from that&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/04/55573/</link>
-      <pubDate>Mon, 03 Apr 2017 15:26:13 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/04/55573/</guid>
-      <description>&lt;p&gt;I’m more into one social network that spans all of the internet a la @SocialWebWG ;)&lt;/p&gt;
 </description>
     </item>
     
