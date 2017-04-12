@@ -8,9 +8,23 @@
     <description>Recent content in Replies on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2017 17:29:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Apr 2017 14:52:22 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/replies/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/04/53542/</link>
+      <pubDate>Wed, 12 Apr 2017 14:52:22 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/04/53542/</guid>
+      <description>&lt;p&gt;Okay, backing up. Here’s the problem, as you define it: some developer somewhere adds CSS to your codebase that has unintended consequences. By packaging in a reusable component, you’ve isolated the problem.&lt;/p&gt;
+
+&lt;p&gt;But in reality, all you’ve done is moved the API. You still need the developer to use your component. Do you then wrap every native in a component, like links and inputs? If you make a &amp;lt;Button&amp;gt;, what’s to say some dev isn’t going to forget it’s there and use a native &amp;lt;button&amp;gt;? What if they need/want something slightly different, do you keep adding more and more options to the component? These can be answered, but these are all the same decisions you would make in CSS land.&lt;/p&gt;
+
+&lt;p&gt;It’s a lot of overhead, and I don’t see the gain. What I do see is permission implicitly granted for devs who don’t understand CSS—and by that I mean things like positioning and layout and margin collapsing—to start writing CSS willy nilly.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -105,23 +119,6 @@
       
       <guid>http://keithjgrant.com/replies/2017/03/55642/</guid>
       <description>&lt;p&gt;Yeah. I complained loudly when Twitter floated the idea of lifting the character limit… but I’ve totally come around on that. I’m ready for longer tweets. 😬&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/03/7116/</link>
-      <pubDate>Fri, 31 Mar 2017 01:58:36 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/03/7116/</guid>
-      <description>&lt;p&gt;You have a few options, but none are perfect. Honestly, this is what grid is for (though, in this instance, a sub-grid would be ideal, but that isn&amp;#39;t implemented yet).&lt;/p&gt;
-
-&lt;p&gt;A couple possibilities w/ the current setup:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;set a min-height on the title, equal to either 2 or 3 lines of text. Downside: would produces a gap below the titles when none of them wrap; it also will still fall out of alignment if you wrap more times than that.&lt;/li&gt;
-&lt;li&gt;put a margin-top: auto on the description. This will push it down to the bottom of its flex container. But this will knock it out of alignment w/ the &amp;quot;special&amp;quot; item&amp;hellip; so you would have to put a dummy (invisible) placeholder there for items without a &amp;quot;special.&amp;quot;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
