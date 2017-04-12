@@ -123,26 +123,25 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
-            Don’t QWOP Your Way Through CSS
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
+            What Grid Can Do That Tables Can’t
           </a>
         </h2>
         <div class="content e-content">
-            <p><a href="http://www.foddy.net/Athletics.html">QWOP</a>, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W, O, and P will each extend one leg or bend one knee. Coordinating them all is incredibly difficult, and you are usually lucky if you can make a full stride before falling on your head.</p>
+            <p>There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).</p>
 
-<p>This is also how a lot of developers treat CSS. Instead of thinking about constructing a robust system, they focus on only one specific part of the desired result. Instead of asking, “How do I run?”, they ask, “How do I flex my knee?” I can teach you how to flex your knee, but if QWOP shows us anything, that knowledge might actually make running more difficult.</p>
+<p>It’s true that grid looks a lot like tables at first glance. But it’s also worth noting the features grid provides that cannot be accomplished using tables. Here are just a few:</p>
 
-<p>CSS does a lot of work for you, if you will let it. Normal document flow ensures things all fit together on the page; this is why you should be judicious with positioning that breaks out of document flow. CSS automatically sizes your elements to contain their text; this is why you should avoid explicitly setting height. Relative units allow you to define one value in terms of another so they will respond together if the context changes; this is why I sometimes frown on pixel units. Margins collapse so that paragraphs stack with the correct spacing. Certain properties inherit down the DOM tree so you don’t have to specify a font for every single element.</p>
+<ul>
+<li><a href="http://gridbyexample.com/examples/example15/">Overlapping cells</a></li>
+<li><a href="http://gridbyexample.com/examples/example12/">Empty cells</a>, without a bunch of empty tags</li>
+<li>Size columns (or rows!) in <a href="https://alligator.io/css/css-grid-layout-fr-unit/">proportion to one another</a></li>
+<li><a href="http://gridbyexample.com/examples/example24/">Complex alignment</a> of <a href="http://gridbyexample.com/examples/example25/">contents within a cell</a></li>
+<li>Specify a <a href="https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/">flexible range of acceptable sizes</a> for columns &amp; rows</li>
+<li>Provide a full definition of responsive behavior, often without any media queries</li>
+</ul>
 
-<p>You can get down to the “bare metal” in CSS, if you want. You can specify absolute positions for everything and set explicit heights and define every single value in pixels and override inheritance. But in the end, this will make more work for yourself and unearth edge cases you didn’t think about.</p>
-
-<p>The next time you find yourself asking something like, “How do I vertically center this?”, take a step back. Are you having trouble because you set the height on something? Why did you set a height? What are you <em>actually</em> trying to achieve? Instead of focusing on a specific metric, think about the system as a whole: perhaps you want several items to all have the same height. Now, the problem is defined in terms of some desired <a href="https://www.youtube.com/watch?v=TGHbkTGVqoU">system behavior</a>. Solve for that: flexbox or grid can align multiple elements with the same height (they can also center the contents within, too).</p>
-
-<p>The automatic behaviors of CSS aren’t always apparent if you aren’t familiar with them. They can result in weird outcomes, and you will be frustrated by them. So, I think, the first tendency is to find a way to turn off this “help.” Don’t.</p>
-
-<p>Trust CSS; it does good things for you if you let it. Learn how to solve for system behaviors. Unless you like running by pressing Q, W, O, and P.</p>
-
-          <p class="post-date">07 Apr 2017</p>
+          <p class="post-date">12 Apr 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -166,7 +165,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/grid-v-tables/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -213,7 +212,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/04/grid-v-tables/",  null );
   });
 </script>
 
@@ -225,6 +224,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">What Grid Can Do That Tables Can’t</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -239,11 +243,6 @@
       <li><a href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">More thoughts on CSS in JS</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/03/aspect-ratios/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">A better approach to CSS aspect ratios</div>
       </a></li>
       
     </ul>

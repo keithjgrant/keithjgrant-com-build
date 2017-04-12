@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>It’s Both</title>
+<title>Css</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,9 +20,9 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="It’s Both">
-<meta name="twitter:description" content="I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems">
-
+<meta name="og:title" content="Css">
+<meta name="twitter:description" content="">
+<link rel="alternate" type="application/rss+xml" title="Css | keithjgrant.com" href="http://keithjgrant.com/categories/css/index.xml">
 
 <meta name="twitter:widgets:theme" content="light">
 <meta name="twitter:widgets:link-color" content="#f59f00">
@@ -37,13 +37,13 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/posts/2017/01/its-both/">
+<link rel="canonical" href="http://keithjgrant.com/categories/css/">
 
 <link rel="stylesheet" href="/css/style.css?v=2">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
 
 </head>
-<body class="h-entry">
+<body>
   <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-home" viewBox="0 0 1024 1024"><title>home</title><path class="path1" d="M1017.382 622.826l-452.050-499.634c-14.051-15.533-32.992-24.086-53.333-24.086-0.002 0 0 0 0 0-20.339 0-39.282 8.555-53.334 24.086l-452.050 499.634c-9.485 10.485-8.675 26.674 1.808 36.158 4.899 4.432 11.043 6.616 17.168 6.616 6.982 0 13.938-2.838 18.992-8.426l109.016-120.491v410.517c0 42.347 34.453 76.8 76.8 76.8h563.2c42.347 0 76.8-34.453 76.8-76.8v-410.517l109.018 120.493c9.485 10.483 25.674 11.296 36.158 1.808 10.483-9.485 11.293-25.675 1.806-36.158zM614.4 972.8h-204.8v-230.4c0-14.115 11.485-25.6 25.6-25.6h153.6c14.115 0 25.6 11.485 25.6 25.6v230.4zM819.2 947.2c0 14.115-11.485 25.6-25.6 25.6h-128v-230.4c0-42.349-34.451-76.8-76.8-76.8h-153.6c-42.347 0-76.8 34.451-76.8 76.8v230.4h-128c-14.115 0-25.6-11.485-25.6-25.6v-467.106l291.832-322.552c4.222-4.667 9.68-7.237 15.368-7.237s11.146 2.57 15.366 7.235l291.834 322.552v467.107z"></path></symbol>
@@ -118,161 +118,37 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/01/its-both/">It’s Both</a></h1>
+      <h2>Css</h2>
     </div>
     <article class="post-body">
-      <div>
-        
-
-        
-
-        
-
-        <div class="e-content content show-embeds">
-            
-
-<p>I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems of software architecture.</p>
-
-<p>I’m also (in case you <a href="https://www.manning.com/books/css-in-depth">somehow missed it</a>) a “CSS Guy”. I learned CSS during its infancy in the mid-nineties and have worked to stay up to speed ever since.</p>
-
-<p>When I look out at the industry today, it kind of feels <a href="https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#1e2d">like</a> <a href="http://mrmrs.io/writing/2016/03/24/scalable-css/">watching</a> <a href="http://www.zeldman.com/2017/01/03/kiss-my-classname/">parents</a> <a href="https://twitter.com/thejameskyle/status/824795012680421376">fight</a>. And I’ll admit it, I’ve <a href="/posts/2015/05/against-css-in-js/">contributed to the problem</a>. But the more I watch this unfold, the more I feel like we have two camps, talking right past one another, and no meeting in the middle. Both are missing the points the other is trying to make. So I’m shifting my stance:</p>
-
-<h2 id="we-re-both-right">We’re both right</h2>
-
-<p>Writing SPAs is complicated business. The page isn’t just a static document you can slap some styles on and call it a day. What if you need to load content dynamically, and it results in unpredictable source order of your CSS? How do you know if styles for deeply-nested dependencies are already loaded? How do you know when you can delete code?</p>
-
-<p>These are hard problems. You can’t answer them by simply saying “learn CSS”. I personally may not like CSS-in-JS or inline styles, but I do realize they are important experiments. They are quests for answers to these issues. I don’t think they are the ultimate solution. That’s okay. Maybe they will get us to it.</p>
-
-<p>On the other hand, we have whole teams of developers who fundamentally don’t grok CSS. They code up their JavaScript components, then stick the styles they want into the project stylesheet. These may be great developers when it comes to traditional programming languages, but they get really frustrated with layout problems or specificity battles. Compound this with “too many cooks in the kitchen” and you have a real mess.</p>
-
-<p>We have sixty-plus years of industry experience about architecting code in traditional programming languages, but we’ve struggled to apply this stuff to CSS. Only in the last seven years or so have we started to figure out best practices for the language, and we are not doing a great job of disseminating them. When we teach that BEM is a “naming convention” rather emphasize it is a way to architect systems with modular code, thousands of developers miss the point entirely. This only drives them further away because the so-called “best practices” don’t work when they aren’t actually followed.</p>
-
-<p>They don’t understand that BEM is about architecture, not simply namespacing. They don’t see the value of using a pattern library, of centralizing your CSS and imposing order on who controls the CSS rather than treating it like a garbage pile where any random dev can just add haphazard code.</p>
-
-<p>When JavaScript-centric developers hear, “putting your CSS in JavaScript makes it easier” they clamor to get on board. But this must be made absolutely clear: you still need to understand CSS. If you don’t know what a block formatting context is, CSS in JS will not fix your layout issues. If you don’t understand stacking contexts, you will continue to struggle with futile z-index battles. If you don’t learn custom properties or the difference between cascade and inheritance or margin collapsing, these experiments will not really solve the fundamental problem: most teams don’t know how to develop with CSS.</p>
-
-<h2 id="always-bet-on-del-javascript-del-the-open-web">Always bet on <del>JavaScript</del> the Open Web</h2>
-
-<p>So, yes. Hire engineers who know how to deal with system architecture. But also <a href="/posts/2016/10/your-team-needs-a-ux-engineer/">hire someone exclusively for their CSS skills</a>. Put smart people on your team from both camps. Let them work together to solve these problems. Because your problems are unique and your solutions might not look like someone else’s.</p>
-
-<p>I can say with confidence that CSS in JS will pass. In our industry, something new always comes along. The saying is, “Always bet on JavaScript” &mdash; but this isn’t quite right. When it’s JavaScript vs Java or Ruby, yes, bet on JS. JavaScript wins not because it is inherently better; it wins because it is part of the open web platform.</p>
-
-<p>The open web platform always wins. And CSS is part of that platform. It’s not CSS versus JS. It’s CSS <em>plus</em> JS. The platform will evolve. And the platform will win.</p>
-
-            
-          
-        </div>
-      </div>
-      <p class="post-date metadata text-right"><date class="dt-published">27 Jan 2017 08:54:57</date></p>
       
-        <div class="loading-indicator" id="comments-loader">
-  <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
-  <div>Loading interactions...</div>
-</div>
-<div class="post-interaction is-hidden" id="comments">
-  <div class="tabs">
-    <button aria-controls="pane-replies">
-      <svg class="interaction-icon"><use xlink:href="#icon-reply"></use></svg>
-      <span id="reply-count"></span>
-    </button>
-    <button aria-controls="pane-likes">
-      <svg class="interaction-icon"><use xlink:href="#icon-heart"></use></svg>
-      <span id="like-count"></span>
-    </button>
-    <button aria-controls="pane-shares">
-      <svg class="interaction-icon"><use xlink:href="#icon-share"></use></svg>
-      <span id="share-count"></span>
-    </button>
-  </div>
-  <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
-    <h3>Replies</h3>
-    <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/01/its-both/" />
-      <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
-      <div class="inline-form__inputs">
-        <input type="text" id="reply-url" name="source" />
-        <button type="submit" id="webmention-submit">Send Webmention</button>
-      </div>
-      <p class="form-alert is-hidden"></p>
-    </form>
-    <ul class="replies" id="replies"></ul>
-  </div>
-  <div class="tab-pane" id="pane-likes" aria-controlled-by="tab-likes">
-    <h3>Likes</h3>
-    <ul class="replies" id="likes"></ul>
-  </div>
-  <div class="tab-pane" id="pane-shares" aria-controlled-by="tab-shares">
-    <h3>Shares</h3>
-    <ul class="replies" id="shares"></ul>
+        
+          <div class="post-body__item h-entry">
+  <h2 class="p-name">
+    <a class="u-url" href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
+      What Grid Can Do That Tables Can’t
+    </a>
+    <date class="post-date dt-published">12 Apr 2017</date>
+  </h2>
+  
+
+  <div class="content">
+    <p>
+      <span class="p-summary">There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).
+It’s true that grid looks a lot like tables at first glance.</span>
+      <a href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">Continue reading...</a>
+    </p>
   </div>
 </div>
 
-<template id="reply-template">
-  <li class="reply">
-    <img src="" />
-    <div class="reply__body">
-      <div>
-        <a class="reply__author" href=""></a>
-        <a class="reply__date" href=""></a>
-      </div>
-      <div class="content reply__content"></div>
-    </div>
-  </li>
-</template>
-
-<template id="like-template">
-  <li class="reply reply--like">
-    <img src="" />
-    <div class="reply__body">
-      <div>
-        <a class="reply__author" href=""></a>
-        <a class="reply__date" href=""></a>
-      </div>
-    </div>
-  </li>
-</template>
-
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/01/its-both/",  null );
-  });
-</script>
-
+        
       
     </article>
+
+    
+
   </main>
 
-  
-    <div class="bottom-container">
-  <div class="bottom-container__inner">
-    <h3>Recent posts</h3>
-    <ul class="iconlist">
-      
-      <li><a href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">What Grid Can Do That Tables Can’t</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">Don’t QWOP Your Way Through CSS</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/03/css-is-not-broken/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">CSS is Not Broken</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">More thoughts on CSS in JS</div>
-      </a></li>
-      
-    </ul>
-  </div>
-</div>
-
-  
   
 <script src="/js/prettify.js"></script>
 <script type="text/javascript" src="/js/page.js"></script>
