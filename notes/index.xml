@@ -8,9 +8,21 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Apr 2017 13:57:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Apr 2017 14:22:00 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/04/51720/</link>
+      <pubDate>Wed, 12 Apr 2017 14:22:00 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/04/51720/</guid>
+      <description>&lt;p&gt;“When it comes to CSS, isolation is more important than reuse”&lt;/p&gt;
+
+&lt;p&gt;I disagree with this &lt;em&gt;so hard&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -110,15 +122,6 @@
       <guid>http://keithjgrant.com/notes/2017/03/68059/</guid>
       <description>&lt;p&gt;I’m still fascinated that JavaScript—which only runs on one thread—is the language that popularized functional, async programming, which is needed for multi-threaded programming.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/03/66211/</link>
-      <pubDate>Mon, 13 Mar 2017 18:23:31 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/03/66211/</guid>
-      <description></description>
     </item>
     
   </channel>
