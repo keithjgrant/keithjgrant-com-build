@@ -8,9 +8,18 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Apr 2017 15:18:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 14:41:49 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/likes/2017/05/52909/</link>
+      <pubDate>Mon, 01 May 2017 14:41:49 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/likes/2017/05/52909/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -102,20 +111,6 @@
 &lt;li&gt;Specify a &lt;a href=&#34;https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/&#34;&gt;flexible range of acceptable sizes&lt;/a&gt; for columns &amp;amp; rows&lt;/li&gt;
 &lt;li&gt;Provide a full definition of responsive behavior, often without any media queries&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/04/53542/</link>
-      <pubDate>Wed, 12 Apr 2017 14:52:22 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/04/53542/</guid>
-      <description>&lt;p&gt;Okay, backing up. Here’s the problem, as you define it: some developer somewhere adds CSS to your codebase that has unintended consequences. By packaging in a reusable component, you’ve isolated the problem.&lt;/p&gt;
-
-&lt;p&gt;But in reality, all you’ve done is moved the API. You still need the developer to use your component. Do you then wrap every native in a component, like links and inputs? If you make a &amp;lt;Button&amp;gt;, what’s to say some dev isn’t going to forget it’s there and use a native &amp;lt;button&amp;gt;? What if they need/want something slightly different, do you keep adding more and more options to the component? These can be answered, but these are all the same decisions you would make in CSS land.&lt;/p&gt;
-
-&lt;p&gt;It’s a lot of overhead, and I don’t see the gain. What I do see is permission implicitly granted for devs who don’t understand CSS—and by that I mean things like positioning and layout and margin collapsing—to start writing CSS willy nilly.&lt;/p&gt;
 </description>
     </item>
     
