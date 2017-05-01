@@ -8,9 +8,18 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 May 2017 14:41:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 17:56:24 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/likes/2017/05/64584/</link>
+      <pubDate>Mon, 01 May 2017 17:56:24 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/likes/2017/05/64584/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -91,27 +100,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/04/67695/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>What Grid Can Do That Tables Can’t</title>
-      <link>http://keithjgrant.com/posts/2017/04/grid-v-tables/</link>
-      <pubDate>Wed, 12 Apr 2017 11:52:15 -0400</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2017/04/grid-v-tables/</guid>
-      <description>&lt;p&gt;There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).&lt;/p&gt;
-
-&lt;p&gt;It’s true that grid looks a lot like tables at first glance. But it’s also worth noting the features grid provides that cannot be accomplished using tables. Here are just a few:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gridbyexample.com/examples/example15/&#34;&gt;Overlapping cells&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gridbyexample.com/examples/example12/&#34;&gt;Empty cells&lt;/a&gt;, without a bunch of empty tags&lt;/li&gt;
-&lt;li&gt;Size columns (or rows!) in &lt;a href=&#34;https://alligator.io/css/css-grid-layout-fr-unit/&#34;&gt;proportion to one another&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gridbyexample.com/examples/example24/&#34;&gt;Complex alignment&lt;/a&gt; of &lt;a href=&#34;http://gridbyexample.com/examples/example25/&#34;&gt;contents within a cell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Specify a &lt;a href=&#34;https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/&#34;&gt;flexible range of acceptable sizes&lt;/a&gt; for columns &amp;amp; rows&lt;/li&gt;
-&lt;li&gt;Provide a full definition of responsive behavior, often without any media queries&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
