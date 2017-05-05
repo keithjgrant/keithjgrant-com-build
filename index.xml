@@ -44,9 +44,9 @@
 &lt;li&gt;&lt;code&gt;align-self&lt;/code&gt; on a single flex item controls how that item is aligned vertically within a row, overriding its parent’s &lt;code&gt;align-items&lt;/code&gt; setting.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;hope-that-helps&#34;&gt;Hope that helps&lt;/h2&gt;
+&lt;h2 id=&#34;one-caveat&#34;&gt;One caveat&lt;/h2&gt;
 
-&lt;p&gt;If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that &lt;strong&gt;these swap if you change the flex direction&lt;/strong&gt; to “column” or “column reverse”.&lt;/p&gt;
+&lt;p&gt;If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that &lt;strong&gt;these swap if you change the flex direction&lt;/strong&gt; to “column” or “column reverse”. Technically speaking, &lt;code&gt;justify-content&lt;/code&gt; spaces along the main axis, and &lt;code&gt;align-*&lt;/code&gt; properties space along the cross axis. But learn the default behavior, as it is the most common scenario; and know that rotating these axes changes it.&lt;/p&gt;
 
 &lt;p&gt;As a bonus, these properties also apply to CSS Grid as well. Grid also brings in a &lt;code&gt;justify-items&lt;/code&gt; and &lt;code&gt;justify-self&lt;/code&gt; property to fill out the set. These work much like their &lt;code&gt;align-*&lt;/code&gt; counterparts, but on the horizontal plane.&lt;/p&gt;
 </description>

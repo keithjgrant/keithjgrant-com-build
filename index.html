@@ -154,9 +154,9 @@
 <li><code>align-self</code> on a single flex item controls how that item is aligned vertically within a row, overriding its parent’s <code>align-items</code> setting.</li>
 </ul>
 
-<h2 id="hope-that-helps">Hope that helps</h2>
+<h2 id="one-caveat">One caveat</h2>
 
-<p>If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that <strong>these swap if you change the flex direction</strong> to “column” or “column reverse”.</p>
+<p>If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that <strong>these swap if you change the flex direction</strong> to “column” or “column reverse”. Technically speaking, <code>justify-content</code> spaces along the main axis, and <code>align-*</code> properties space along the cross axis. But learn the default behavior, as it is the most common scenario; and know that rotating these axes changes it.</p>
 
 <p>As a bonus, these properties also apply to CSS Grid as well. Grid also brings in a <code>justify-items</code> and <code>justify-self</code> property to fill out the set. These work much like their <code>align-*</code> counterparts, but on the horizontal plane.</p>
 
