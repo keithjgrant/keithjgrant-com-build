@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>Hosting on Github</title>
+<title>Memorizing Alignment Properties</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,9 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="Hosting on Github">
-<meta name="twitter:description" content="Well, this is a bit of an experiment&amp;hellip; I&amp;rsquo;ve lost track of how many times I&amp;rsquo;ve started a redesign of my WordPress blog, only to give up after days of fiddling. This is kind of silly, ">
+<meta name="og:title" content="Memorizing Alignment Properties">
+<meta name="twitter:description" content="Do you often find yourself looking up a Flexbox cheat sheet? Wish you could just commit all those properties to memory and be done with it? Here’s how I memorized them.
+Learn “flex” If you’ve worked w">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,7 +38,7 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/posts/2015/05/hosting-on-github/">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/">
 
 <link rel="stylesheet" href="/css/style.css?v=2">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
@@ -118,7 +119,7 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2015/05/hosting-on-github/">Hosting on Github</a></h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/">Memorizing Alignment Properties</a></h1>
     </div>
     <article class="post-body">
       <div>
@@ -129,17 +130,43 @@
         
 
         <div class="e-content content show-embeds">
-            <p>Well, this is a bit of an experiment&hellip; I&rsquo;ve lost track of how many times I&rsquo;ve started a redesign of my WordPress blog, only to give up after days of fiddling.  This is kind of silly, since I generally finish the <em>design</em> of my site fairly quickly, but get held up fighting with the implementation minutia.</p>
+            
 
-<p>I blog very rarely.  I also occasionally want to host various other pages that don&rsquo;t necessarily need to fit with the theme of the rest of my site.  WordPress is really overkill for this.  What I really need is just some static hosting.  So I&rsquo;m giving GitHub Pages a try.  Not only that, but I should be able to play with the design whenever I feel like, without too much time investment.</p>
+<p>Do you often find yourself looking up a Flexbox <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">cheat sheet</a>? Wish you could just commit all those properties to memory and be done with it? Here’s how I memorized them.</p>
 
-<p>So here&rsquo;s my new design.  It took me just a few days not only to build the site, but to also roll out some bare-bones blogging &amp; deployment scripts in gulp; my database is a git repository.  I can blog in <a href="http://jade-lang.com/">Jade</a> or MarkDown.  I think my wordpress days may be done, at least for now.</p>
+<h2 id="learn-flex">Learn “flex”</h2>
+
+<p>If you’ve worked with flexbox much, you might already have this one committed to memory. The <code>flex</code> property is itself shorthand for three other properties: <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>. But most of the time, the shorthand is all you need (and is even preferable).</p>
+
+<p>If you’re not familiar with this shorthand yet, learn it first. Learn only it. Don’t worry about any of the rest until you get this down.</p>
+
+<h2 id="justify-horizontal">Justify = horizontal</h2>
+
+<p>In Microsoft Word, if you “justify” text, you control how the text is spaced out horizontally. It spaces to be flush against the left and right sides.</p>
+
+<p>In the same way, <code>justify-content</code> is used on a flex container to control how its flex items are spaced <em>horizontally</em>.</p>
+
+<h2 id="align-vertical">Align = vertical</h2>
+
+<p>You know there’s a <code>vertical-align</code> property, right? Maybe it didn’t ever do what you expected it do, but you know it’s there. The same way, the <code>align-*</code> properties control <em>vertical</em> alignment.</p>
+
+<ul>
+<li><code>align-content</code> controls how the rows of flex items align vertically within the flex container. (This generally only applies when you have flex-wrap enabled.)</li>
+<li><code>align-items</code> controls how the flex items align themselves vertically within each row.</li>
+<li><code>align-self</code> on a single flex item controls how that item is aligned vertically within a row, overriding its parent’s <code>align-items</code> setting.</li>
+</ul>
+
+<h2 id="hope-that-helps">Hope that helps</h2>
+
+<p>If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that <strong>these swap if you change the flex direction</strong> to “column” or “column reverse”.</p>
+
+<p>As a bonus, these properties also apply to CSS Grid as well. Grid also brings in a <code>justify-items</code> and <code>justify-self</code> property to fill out the set. These work much like their <code>align-*</code> counterparts, but on the horizontal plane.</p>
 
             
           
         </div>
       </div>
-      <p class="post-date metadata text-right"><date class="dt-published">16 May 2015 16:26:32</date></p>
+      <p class="post-date metadata text-right"><date class="dt-published">05 May 2017 09:44:55</date></p>
       
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -163,7 +190,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2015/05/hosting-on-github/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -210,7 +237,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2015/05/hosting-on-github/", ["/posts/hosting-on-github.html"]);
+    loadWebmentions("http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/",  null );
   });
 </script>
 

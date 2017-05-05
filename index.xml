@@ -8,9 +8,49 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 May 2017 17:56:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 May 2017 09:44:55 -0400</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title>Memorizing Alignment Properties</title>
+      <link>http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/</link>
+      <pubDate>Fri, 05 May 2017 09:44:55 -0400</pubDate>
+      
+      <guid>http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/</guid>
+      <description>
+
+&lt;p&gt;Do you often find yourself looking up a Flexbox &lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34;&gt;cheat sheet&lt;/a&gt;? Wish you could just commit all those properties to memory and be done with it? Here’s how I memorized them.&lt;/p&gt;
+
+&lt;h2 id=&#34;learn-flex&#34;&gt;Learn “flex”&lt;/h2&gt;
+
+&lt;p&gt;If you’ve worked with flexbox much, you might already have this one committed to memory. The &lt;code&gt;flex&lt;/code&gt; property is itself shorthand for three other properties: &lt;code&gt;flex-grow&lt;/code&gt;, &lt;code&gt;flex-shrink&lt;/code&gt;, and &lt;code&gt;flex-basis&lt;/code&gt;. But most of the time, the shorthand is all you need (and is even preferable).&lt;/p&gt;
+
+&lt;p&gt;If you’re not familiar with this shorthand yet, learn it first. Learn only it. Don’t worry about any of the rest until you get this down.&lt;/p&gt;
+
+&lt;h2 id=&#34;justify-horizontal&#34;&gt;Justify = horizontal&lt;/h2&gt;
+
+&lt;p&gt;In Microsoft Word, if you “justify” text, you control how the text is spaced out horizontally. It spaces to be flush against the left and right sides.&lt;/p&gt;
+
+&lt;p&gt;In the same way, &lt;code&gt;justify-content&lt;/code&gt; is used on a flex container to control how its flex items are spaced &lt;em&gt;horizontally&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;align-vertical&#34;&gt;Align = vertical&lt;/h2&gt;
+
+&lt;p&gt;You know there’s a &lt;code&gt;vertical-align&lt;/code&gt; property, right? Maybe it didn’t ever do what you expected it do, but you know it’s there. The same way, the &lt;code&gt;align-*&lt;/code&gt; properties control &lt;em&gt;vertical&lt;/em&gt; alignment.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;align-content&lt;/code&gt; controls how the rows of flex items align vertically within the flex container. (This generally only applies when you have flex-wrap enabled.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-items&lt;/code&gt; controls how the flex items align themselves vertically within each row.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-self&lt;/code&gt; on a single flex item controls how that item is aligned vertically within a row, overriding its parent’s &lt;code&gt;align-items&lt;/code&gt; setting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hope-that-helps&#34;&gt;Hope that helps&lt;/h2&gt;
+
+&lt;p&gt;If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that &lt;strong&gt;these swap if you change the flex direction&lt;/strong&gt; to “column” or “column reverse”.&lt;/p&gt;
+
+&lt;p&gt;As a bonus, these properties also apply to CSS Grid as well. Grid also brings in a &lt;code&gt;justify-items&lt;/code&gt; and &lt;code&gt;justify-self&lt;/code&gt; property to fill out the set. These work much like their &lt;code&gt;align-*&lt;/code&gt; counterparts, but on the horizontal plane.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -90,15 +130,6 @@
       <pubDate>Thu, 13 Apr 2017 14:37:42 +0000</pubDate>
       
       <guid>http://keithjgrant.com/notes/2017/04/52662/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/likes/2017/04/67695/</link>
-      <pubDate>Wed, 12 Apr 2017 18:48:15 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/likes/2017/04/67695/</guid>
       <description></description>
     </item>
     

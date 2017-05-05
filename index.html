@@ -123,25 +123,44 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
-            What Grid Can Do That Tables Can’t
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/">
+            Memorizing Alignment Properties
           </a>
         </h2>
         <div class="content e-content">
-            <p>There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).</p>
+            
 
-<p>It’s true that grid looks a lot like tables at first glance. But it’s also worth noting the features grid provides that cannot be accomplished using tables. Here are just a few:</p>
+<p>Do you often find yourself looking up a Flexbox <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">cheat sheet</a>? Wish you could just commit all those properties to memory and be done with it? Here’s how I memorized them.</p>
+
+<h2 id="learn-flex">Learn “flex”</h2>
+
+<p>If you’ve worked with flexbox much, you might already have this one committed to memory. The <code>flex</code> property is itself shorthand for three other properties: <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>. But most of the time, the shorthand is all you need (and is even preferable).</p>
+
+<p>If you’re not familiar with this shorthand yet, learn it first. Learn only it. Don’t worry about any of the rest until you get this down.</p>
+
+<h2 id="justify-horizontal">Justify = horizontal</h2>
+
+<p>In Microsoft Word, if you “justify” text, you control how the text is spaced out horizontally. It spaces to be flush against the left and right sides.</p>
+
+<p>In the same way, <code>justify-content</code> is used on a flex container to control how its flex items are spaced <em>horizontally</em>.</p>
+
+<h2 id="align-vertical">Align = vertical</h2>
+
+<p>You know there’s a <code>vertical-align</code> property, right? Maybe it didn’t ever do what you expected it do, but you know it’s there. The same way, the <code>align-*</code> properties control <em>vertical</em> alignment.</p>
 
 <ul>
-<li><a href="http://gridbyexample.com/examples/example15/">Overlapping cells</a></li>
-<li><a href="http://gridbyexample.com/examples/example12/">Empty cells</a>, without a bunch of empty tags</li>
-<li>Size columns (or rows!) in <a href="https://alligator.io/css/css-grid-layout-fr-unit/">proportion to one another</a></li>
-<li><a href="http://gridbyexample.com/examples/example24/">Complex alignment</a> of <a href="http://gridbyexample.com/examples/example25/">contents within a cell</a></li>
-<li>Specify a <a href="https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/">flexible range of acceptable sizes</a> for columns &amp; rows</li>
-<li>Provide a full definition of responsive behavior, often without any media queries</li>
+<li><code>align-content</code> controls how the rows of flex items align vertically within the flex container. (This generally only applies when you have flex-wrap enabled.)</li>
+<li><code>align-items</code> controls how the flex items align themselves vertically within each row.</li>
+<li><code>align-self</code> on a single flex item controls how that item is aligned vertically within a row, overriding its parent’s <code>align-items</code> setting.</li>
 </ul>
 
-          <p class="post-date">12 Apr 2017</p>
+<h2 id="hope-that-helps">Hope that helps</h2>
+
+<p>If you can remember this rule, you’ll have a lot more of flexbox ready from memory. Note that <strong>these swap if you change the flex direction</strong> to “column” or “column reverse”.</p>
+
+<p>As a bonus, these properties also apply to CSS Grid as well. Grid also brings in a <code>justify-items</code> and <code>justify-self</code> property to fill out the set. These work much like their <code>align-*</code> counterparts, but on the horizontal plane.</p>
+
+          <p class="post-date">05 May 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -165,7 +184,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/grid-v-tables/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -212,7 +231,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/04/grid-v-tables/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/",  null );
   });
 </script>
 
@@ -224,6 +243,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/04/memorizing-alignment-properties/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">Memorizing Alignment Properties</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -238,11 +262,6 @@
       <li><a href="http://keithjgrant.com/posts/2017/03/css-is-not-broken/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">CSS is Not Broken</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">More thoughts on CSS in JS</div>
       </a></li>
       
     </ul>
