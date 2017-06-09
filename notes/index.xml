@@ -8,9 +8,18 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2017 13:14:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jun 2017 14:12:40 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/06/51160/</link>
+      <pubDate>Fri, 09 Jun 2017 14:12:40 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/06/51160/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -97,23 +106,6 @@
       <description>&lt;p&gt;There’s a forgotten element to Separation of Concerns: keeping things in separate files allows developers w/ different specialties to edit &amp;amp; control contents of the stuff they understand. To date, the JavaScript community at large hasn’t really shown it can be responsible for semantic and accessible markup and sane CSS. 🤔&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://hackernoon.com/professional-pride-7b84287ae747&#34;&gt;https://hackernoon.com/professional-pride-7b84287ae747&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/03/65012/</link>
-      <pubDate>Wed, 29 Mar 2017 18:03:32 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/03/65012/</guid>
-      <description>&lt;p&gt;I get that &lt;a href=&#34;https://medium.com/@isaaclyman/8-css-gotchas-to-start-your-morning-off-right-c5daade0731d&#34;&gt;this is satire&lt;/a&gt;. I’m fine with satire, in general. But the fact that this particular satire resonates with so many people indicates to me that one of the following is true:&lt;/p&gt;
-
-&lt;p&gt;1) We have royally screwed up the teaching of CSS.
-2) Web devs are terrible at taking the time to learn how CSS works.&lt;/p&gt;
-
-&lt;p&gt;It’s probably both. And yes, some of the earlier stuff is not immediately intuitive: floats, vertical-align, etc. But it is understandable. You can make sense of this stuff.&lt;/p&gt;
-
-&lt;p&gt;It’s hard to see devs throwing their hands up in the air… If this stuff is discouraging to you, please take some time to read up on it. Stop trying to hack through the brush alone. There are great resources available (p.s. I’m writing one!)&lt;/p&gt;
 </description>
     </item>
     
