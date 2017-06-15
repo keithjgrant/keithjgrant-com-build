@@ -24,16 +24,6 @@
     
     <item>
       <title></title>
-      <link>http://keithjgrant.com/replies/2017/06/63803/</link>
-      <pubDate>Thu, 15 Jun 2017 17:43:23 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/06/63803/</guid>
-      <description>&lt;p&gt;Out of curiosity, what do you use for a reader?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://keithjgrant.com/replies/2017/04/53542/</link>
       <pubDate>Wed, 12 Apr 2017 14:52:22 +0000</pubDate>
       
@@ -119,6 +109,16 @@
       
       <guid>http://keithjgrant.com/replies/2017/04/51383/</guid>
       <description>&lt;p&gt;To be fair, I’m not fundamentally opposed to putting things in the same file (I love React &amp;amp; JSX!), but we need to ensure people w/ the relevant skills are reviewing the code we put out.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/03/56394/</link>
+      <pubDate>Fri, 31 Mar 2017 15:39:54 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/03/56394/</guid>
+      <description>&lt;p&gt;I just came across a fascinating approach to aspect ratios using an svg: &lt;a href=&#34;http://codepen.io/aghassemi/pen/MpZpmM?editors=1100&#34;&gt;http://codepen.io/aghassemi/pen/MpZpmM?editors=1100&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
