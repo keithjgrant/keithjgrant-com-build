@@ -8,9 +8,18 @@
     <description>Recent content in Notes on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jun 2017 14:12:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jun 2017 14:23:18 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/notes/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/notes/2017/06/51798/</link>
+      <pubDate>Fri, 16 Jun 2017 14:23:18 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/notes/2017/06/51798/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -94,18 +103,6 @@
       
       <guid>http://keithjgrant.com/notes/2017/04/1160/</guid>
       <description>&lt;p&gt;Well, I’m on &lt;a href=&#34;https://mastodon.social/@keithjgrant&#34;&gt;https://mastodon.social/@keithjgrant&lt;/a&gt; for those who are into that sort of thing&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/notes/2017/04/51200/</link>
-      <pubDate>Mon, 03 Apr 2017 14:13:20 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/notes/2017/04/51200/</guid>
-      <description>&lt;p&gt;There’s a forgotten element to Separation of Concerns: keeping things in separate files allows developers w/ different specialties to edit &amp;amp; control contents of the stuff they understand. To date, the JavaScript community at large hasn’t really shown it can be responsible for semantic and accessible markup and sane CSS. 🤔&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://hackernoon.com/professional-pride-7b84287ae747&#34;&gt;https://hackernoon.com/professional-pride-7b84287ae747&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
