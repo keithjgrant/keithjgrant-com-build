@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>More thoughts on CSS in JS</title>
+<title>Transitioning Gradients</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,9 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="More thoughts on CSS in JS">
-<meta name="twitter:description" content="At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF ">
+<meta name="og:title" content="Transitioning Gradients">
+<meta name="twitter:description" content="In, CSS, you can’t transition a background gradient. It sure would be nice if you could:
+.gradient { background-image: linear-gradient( to right, hsl(211, 100%, 50%), hsl(179, 100%, 30%) ); transition">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,7 +38,7 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/07/transitioning-gradients/">
 
 <link rel="stylesheet" href="/css/style.css?v=2">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
@@ -118,7 +119,7 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/">More thoughts on CSS in JS</a></h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/07/transitioning-gradients/">Transitioning Gradients</a></h1>
     </div>
     <article class="post-body">
       <div>
@@ -129,25 +130,76 @@
         
 
         <div class="e-content content show-embeds">
-            <p>At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.</p>
+            <p>In, CSS, you can’t transition a background gradient. It sure would be nice if you could:</p>
 
-<p>In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.</p>
+<pre><code class="language-css">.gradient {
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  transition: background-image 0.5s linear;
+}
 
-<p>I’ve also had to work on projects coded in ExtJS. These feel about the same way: although you are technically editing a JS file, you aren’t really programming “in JavaScript.” Instead, you are basically coding via configuration. Actual understanding of JavaScript doesn’t help you much.</p>
+.gradient:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+}
+</code></pre>
 
-<p>To me, CSS in JS feels the same way. It feels like a tool so a bunch of JavaScript devs can kinda-sorta hack together styles without actually having to write CSS. Except the syntax is more clunky and you have taken away the cascade. (And, yet, surprise! You still need to learn the most complicated parts of CSS.)</p>
+<p>But, no. It jumps from one gradient to the other immediately, with no smooth transition between the two.</p>
 
-<p>Now I’ll be fair, CSS in JS libraries typically provide a much thinner buffer between you and the actual CSS when compared to PrimeFaces. But still… it’s an abstraction layer. It gives the illusion of writing styles in perfect isolation, but inheritance still takes place and can interfere. It gets between me and the code I want actual control over.</p>
+<p>So let’s hack it! We can achieve this effect with the help of a pseudo-element and an opacity transform instead. Applying one gradient to the element. Then, position its pseudo-element to fill the element and apply the second gradient to that. To transition between the two gradients, you simply have to transition the opacity of the pseudo-element.</p>
 
-<p>I know what I’m doing when I code CSS. I <em>want</em> the cascade in many instances; removing it feels crippling. I won’t deny CSS in JS offers some benefits. But they are benefits I am not convinced I need at a cost I am not sure I want to pay.</p>
+<pre><code class="language-css">.gradient {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+}
 
-<p>I won’t say it’s the wrong choice for everyone. Some folks who really do grok CSS are in favor of it. Sometimes ExtJS is the right choice (don’t quote me on that). But dang, please know it’s a compromise that someone might have to clean up down the road.</p>
+.gradient::before {
+  position: absolute;
+  content: &quot;&quot;;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
+</code></pre>
+
+<p>It also takes a little bit of <code>z-index</code> work to ensure the pseudo-element stays positioned behind the content of the main element.</p>
+
+<p>This takes a fair bit of code, unfortunately. But if you need this effect, this is the best (and only) way I’ve found so far to accomplish it.</p>
+
+<p>Check out the full working example:</p>
+
+<p><p data-height="300" data-theme-id="0" data-slug-hash="OgEdgN" data-default-tab="css,result" data-user="keithjgrant" data-embed-version="2" data-pen-title="OgEdgN" class="codepen">See the Pen <a href="https://codepen.io/keithjgrant/pen/OgEdgN/">OgEdgN</a> by Keith Grant (<a href="https://codepen.io/keithjgrant">@keithjgrant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
 
             
           
         </div>
       </div>
-      <p class="post-date metadata text-right"><date class="dt-published">20 Mar 2017 15:07:49</date></p>
+      <p class="post-date metadata text-right"><date class="dt-published">05 Jul 2017 13:33:51</date></p>
       
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -171,7 +223,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/07/transitioning-gradients/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -218,7 +270,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/07/transitioning-gradients/",  null );
   });
 </script>
 
