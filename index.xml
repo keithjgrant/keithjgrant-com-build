@@ -74,7 +74,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;It also takes a little bit of &lt;code&gt;z-index&lt;/code&gt; work to ensure the pseudo-element stays positioned behind the content of the main element.&lt;/p&gt;
+&lt;p&gt;The pseudo-element is initially hidden via &lt;code&gt;opacity: 0&lt;/code&gt;. On hover, that transitions to an &lt;code&gt;opacity: 1&lt;/code&gt;. This produces the illusion of the main gradient transitioning to the pseudo-element’s gradient. It also takes a little bit of &lt;code&gt;z-index&lt;/code&gt; work to ensure the pseudo-element stays positioned behind the content of the main element.&lt;/p&gt;
 
 &lt;p&gt;This takes a fair bit of code, unfortunately. But if you need this effect, this is the best (and only) way I’ve found so far to accomplish it.&lt;/p&gt;
 
