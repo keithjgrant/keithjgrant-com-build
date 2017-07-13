@@ -8,9 +8,19 @@
     <description>Recent content in Replies on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2017 17:44:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jul 2017 13:28:40 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/replies/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/07/48520/</link>
+      <pubDate>Thu, 13 Jul 2017 13:28:40 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/07/48520/</guid>
+      <description>&lt;p&gt;I’m coming to think there will be a place for preprocessor variables from here on out, separate from native vars. (@imports is vital, too)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -109,16 +119,6 @@
       
       <guid>http://keithjgrant.com/replies/2017/04/51383/</guid>
       <description>&lt;p&gt;To be fair, I’m not fundamentally opposed to putting things in the same file (I love React &amp;amp; JSX!), but we need to ensure people w/ the relevant skills are reviewing the code we put out.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/03/56394/</link>
-      <pubDate>Fri, 31 Mar 2017 15:39:54 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/03/56394/</guid>
-      <description>&lt;p&gt;I just came across a fascinating approach to aspect ratios using an svg: &lt;a href=&#34;http://codepen.io/aghassemi/pen/MpZpmM?editors=1100&#34;&gt;http://codepen.io/aghassemi/pen/MpZpmM?editors=1100&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
