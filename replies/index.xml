@@ -8,9 +8,21 @@
     <description>Recent content in Replies on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jul 2017 13:28:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jul 2017 13:12:47 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/replies/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/07/47567/</link>
+      <pubDate>Tue, 18 Jul 2017 13:12:47 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/07/47567/</guid>
+      <description>&lt;p&gt;IMO, this is bad advice. &lt;a href=&#34;https://meiert.com/en/blog/stop-using-resets/&#34;&gt;https://meiert.com/en/blog/stop-using-resets/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Normalize.css fixes a number of odd browser bugs and provides behavior you almost certainly want like inputs and buttons inheriting font styles.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -109,16 +121,6 @@
       
       <guid>http://keithjgrant.com/replies/2017/04/55573/</guid>
       <description>&lt;p&gt;I’m more into one social network that spans all of the internet a la @SocialWebWG ;)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/04/51383/</link>
-      <pubDate>Mon, 03 Apr 2017 14:16:23 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/04/51383/</guid>
-      <description>&lt;p&gt;To be fair, I’m not fundamentally opposed to putting things in the same file (I love React &amp;amp; JSX!), but we need to ensure people w/ the relevant skills are reviewing the code we put out.&lt;/p&gt;
 </description>
     </item>
     
