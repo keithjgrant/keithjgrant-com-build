@@ -8,9 +8,18 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2017 17:04:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2017 14:47:22 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/likes/2017/08/53242/</link>
+      <pubDate>Tue, 01 Aug 2017 14:47:22 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/likes/2017/08/53242/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -95,81 +104,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/07/65455/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Transitioning Gradients</title>
-      <link>http://keithjgrant.com/posts/2017/07/transitioning-gradients/</link>
-      <pubDate>Wed, 05 Jul 2017 13:33:51 -0400</pubDate>
-      
-      <guid>http://keithjgrant.com/posts/2017/07/transitioning-gradients/</guid>
-      <description>&lt;p&gt;In, CSS, you can’t transition a background gradient. It sure would be nice if you could:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.gradient {
-  background-image: linear-gradient(
-    to right,
-    hsl(211, 100%, 50%),
-    hsl(179, 100%, 30%)
-  );
-  transition: background-image 0.5s linear;
-}
-
-.gradient:hover {
-  background-image: linear-gradient(
-    to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
-  );
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But, no. It jumps from one gradient to the other immediately, with no smooth transition between the two.&lt;/p&gt;
-
-&lt;p&gt;So let’s hack it! We can achieve this effect with the help of a pseudo-element and an opacity transform instead.&lt;/p&gt;
-
-&lt;p&gt;First, apply one gradient to the element. Then, position its pseudo-element to fill the element and apply the second gradient to that. To transition between the two gradients,  transition the opacity of the pseudo-element.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.gradient {
-  position: relative;
-  background-image: linear-gradient(
-    to right,
-    hsl(211, 100%, 50%),
-    hsl(179, 100%, 30%)
-  );
-  z-index: 1;
-}
-
-.gradient::before {
-  position: absolute;
-  content: &amp;quot;&amp;quot;;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(
-    to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
-  );
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-
-.gradient:hover::before {
-  opacity: 1;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The pseudo-element is initially hidden via &lt;code&gt;opacity: 0&lt;/code&gt;. On hover, that transitions to an &lt;code&gt;opacity: 1&lt;/code&gt;. This produces the illusion of the main gradient transitioning to the pseudo-element’s gradient. It also takes a little bit of &lt;code&gt;z-index&lt;/code&gt; work to ensure the pseudo-element stays positioned behind the content of the main element.&lt;/p&gt;
-
-&lt;p&gt;This takes a fair bit of code, unfortunately. But if you need this effect, this is the best (and only) way I’ve found so far to accomplish it.&lt;/p&gt;
-
-&lt;p&gt;Check out the full working example:&lt;/p&gt;
-
-&lt;p&gt;&lt;p data-height=&#34;300&#34; data-theme-id=&#34;0&#34; data-slug-hash=&#34;OgEdgN&#34; data-default-tab=&#34;css,result&#34; data-user=&#34;keithjgrant&#34; data-embed-version=&#34;2&#34; data-pen-title=&#34;OgEdgN&#34; class=&#34;codepen&#34;&gt;See the Pen &lt;a href=&#34;https://codepen.io/keithjgrant/pen/OgEdgN/&#34;&gt;OgEdgN&lt;/a&gt; by Keith Grant (&lt;a href=&#34;https://codepen.io/keithjgrant&#34;&gt;@keithjgrant&lt;/a&gt;) on &lt;a href=&#34;https://codepen.io&#34;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async src=&#34;https://production-assets.codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
