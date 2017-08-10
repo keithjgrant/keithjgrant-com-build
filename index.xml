@@ -8,9 +8,18 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2017 12:33:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Aug 2017 15:19:53 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/likes/2017/08/55193/</link>
+      <pubDate>Thu, 10 Aug 2017 15:19:53 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/likes/2017/08/55193/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -94,16 +103,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/07/62250/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/07/48520/</link>
-      <pubDate>Thu, 13 Jul 2017 13:28:40 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/07/48520/</guid>
-      <description>&lt;p&gt;I’m coming to think there will be a place for preprocessor variables from here on out, separate from native vars. (@imports is vital, too)&lt;/p&gt;
-</description>
     </item>
     
   </channel>
