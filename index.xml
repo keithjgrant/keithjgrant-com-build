@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2017 17:01:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Aug 2017 13:39:24 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="http://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>http://keithjgrant.com/replies/2017/08/49164/</link>
+      <pubDate>Fri, 11 Aug 2017 13:39:24 +0000</pubDate>
+      
+      <guid>http://keithjgrant.com/replies/2017/08/49164/</guid>
+      <description>&lt;p&gt;You can do it with brid.gy (like this post). Need to automate the webmention, though&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -91,18 +101,6 @@
       
       <guid>http://keithjgrant.com/likes/2017/07/62318/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://keithjgrant.com/replies/2017/07/47567/</link>
-      <pubDate>Tue, 18 Jul 2017 13:12:47 +0000</pubDate>
-      
-      <guid>http://keithjgrant.com/replies/2017/07/47567/</guid>
-      <description>&lt;p&gt;IMO, this is bad advice. &lt;a href=&#34;https://meiert.com/en/blog/stop-using-resets/&#34;&gt;https://meiert.com/en/blog/stop-using-resets/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Normalize.css fixes a number of odd browser bugs and provides behavior you almost certainly want like inputs and buttons inheriting font styles.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
