@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>What Grid Can Do That Tables Can’t</title>
+<title>Code Not Clojure</title>
 
 <link rel="apple-touch-icon" href="/images/apple-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -20,8 +20,10 @@
 <meta name="twitter:site" content="@keithjgrant">
 <meta name="twitter:image" content="http://keithjgrant.com/images/keithjgrant.jpg">
 
-<meta name="og:title" content="What Grid Can Do That Tables Can’t">
-<meta name="twitter:description" content="There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument">
+<meta name="og:title" content="Code Not Clojure">
+<meta name="twitter:description" content="I’m going to make two declarations, that might sound contradictory:
+ CSS is code. CSS is not a programming language.  Many developers get these backwards.
+It is code in that it requires discipline and">
 
 
 <meta name="twitter:widgets:theme" content="light">
@@ -37,7 +39,7 @@
 <link rel="micropub" href="https://keithjgrant-mp.herokuapp.com/micropub/main" />
 
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato:300,700" rel="stylesheet">
-<link rel="canonical" href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
+<link rel="canonical" href="http://keithjgrant.com/posts/2017/09/code-not-clojure/">
 
 <link rel="stylesheet" href="/css/style.css?v=2">
 <link rel="stylesheet" href="/css/prettify-tommorow.css" />
@@ -118,7 +120,7 @@
 
   <main class="post-container">
     <div class="focus-container">
-      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">What Grid Can Do That Tables Can’t</a></h1>
+      <h1 class="p-name"><a class="u-url" href="http://keithjgrant.com/posts/2017/09/code-not-clojure/">Code Not Clojure</a></h1>
     </div>
     <article class="post-body">
       <div>
@@ -129,24 +131,28 @@
         
 
         <div class="e-content content show-embeds">
-            <p>There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).</p>
+            <p>I’m going to make two declarations, that might sound contradictory:</p>
 
-<p>It’s true that grid looks a lot like tables at first glance. But it’s also worth noting the features grid provides that cannot be accomplished using tables. Here are just a few:</p>
+<ol>
+<li>CSS is code.</li>
+<li>CSS is not a programming language.</li>
+</ol>
 
-<ul>
-<li><a href="http://gridbyexample.com/examples/example15/">Overlapping cells</a></li>
-<li><a href="http://gridbyexample.com/examples/example12/">Empty cells</a>, without a bunch of empty tags</li>
-<li>Size columns (or rows!) in <a href="https://alligator.io/css/css-grid-layout-fr-unit/">proportion to one another</a></li>
-<li><a href="http://gridbyexample.com/examples/example24/">Complex alignment</a> of <a href="http://gridbyexample.com/examples/example25/">contents within a cell</a></li>
-<li>Specify a <a href="https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/">flexible range of acceptable sizes</a> for columns &amp; rows</li>
-<li>Provide a full definition of responsive behavior, often without any media queries</li>
-</ul>
+<p>Many developers get these backwards.</p>
+
+<p>It is code in that it requires discipline and rigor. It requires forethought, planning, and both big-picture and small-picture thinking. You need to consider edge cases and strive to keep your CSS logically organized.</p>
+
+<p>At the same time, it is not a programming language. It is not executed in a linear fashion. Many of the rules of software architecture do not (and should not) cleanly apply. It is meant to be global, a cross-cutting concern that uniformly addresses various circumstances wherever they appear on the page.</p>
+
+<p>Too many developers try to force it into the mental model of a programming language, missing out on many of its most powerful features like the cascade and inheritance. And yet these same developers treat their CSS as an afterthought, throwing rules haphazardly onto the end of a stylesheet with little consideration for the selectors they use.</p>
+
+<p>If you find yourself doing this, reverse your thinking. Don’t expect CSS to be a programming language, but do treat it like code.</p>
 
             
           
         </div>
       </div>
-      <p class="post-date metadata text-right"><date class="dt-published">12 Apr 2017 11:52:15</date></p>
+      <p class="post-date metadata text-right"><date class="dt-published">08 Sep 2017 11:09:23</date></p>
       
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -170,7 +176,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/04/grid-v-tables/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/09/code-not-clojure/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -217,7 +223,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/04/grid-v-tables/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/09/code-not-clojure/",  null );
   });
 </script>
 

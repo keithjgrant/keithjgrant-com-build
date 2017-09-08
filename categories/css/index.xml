@@ -12,6 +12,31 @@
     <link rel="self" href="http://keithjgrant.com/categories/css/index.xml" xmlns="http://www.w3.org/2005/Atom" />
     
     <item>
+      <title>Code Not Clojure</title>
+      <link>http://keithjgrant.com/posts/2017/09/code-not-clojure/</link>
+      <pubDate>Fri, 08 Sep 2017 11:09:23 -0400</pubDate>
+      
+      <guid>http://keithjgrant.com/posts/2017/09/code-not-clojure/</guid>
+      <description>&lt;p&gt;I’m going to make two declarations, that might sound contradictory:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;CSS is code.&lt;/li&gt;
+&lt;li&gt;CSS is not a programming language.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Many developers get these backwards.&lt;/p&gt;
+
+&lt;p&gt;It is code in that it requires discipline and rigor. It requires forethought, planning, and both big-picture and small-picture thinking. You need to consider edge cases and strive to keep your CSS logically organized.&lt;/p&gt;
+
+&lt;p&gt;At the same time, it is not a programming language. It is not executed in a linear fashion. Many of the rules of software architecture do not (and should not) cleanly apply. It is meant to be global, a cross-cutting concern that uniformly addresses various circumstances wherever they appear on the page.&lt;/p&gt;
+
+&lt;p&gt;Too many developers try to force it into the mental model of a programming language, missing out on many of its most powerful features like the cascade and inheritance. And yet these same developers treat their CSS as an afterthought, throwing rules haphazardly onto the end of a stylesheet with little consideration for the selectors they use.&lt;/p&gt;
+
+&lt;p&gt;If you find yourself doing this, reverse your thinking. Don’t expect CSS to be a programming language, but do treat it like code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>What Grid Can Do That Tables Can’t</title>
       <link>http://keithjgrant.com/posts/2017/04/grid-v-tables/</link>
       <pubDate>Wed, 12 Apr 2017 11:52:15 -0400</pubDate>

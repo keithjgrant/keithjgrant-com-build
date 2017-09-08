@@ -123,79 +123,29 @@
     <article class="post-body h-entry">
       
         <h2 class="p-name">
-          <a class="u-url" href="http://keithjgrant.com/posts/2017/07/transitioning-gradients/">
-            Transitioning Gradients
+          <a class="u-url" href="http://keithjgrant.com/posts/2017/09/code-not-clojure/">
+            Code Not Clojure
           </a>
         </h2>
         <div class="content e-content">
-            <p>In, CSS, you can’t transition a background gradient. It sure would be nice if you could:</p>
+            <p>I’m going to make two declarations, that might sound contradictory:</p>
 
-<pre><code class="language-css">.gradient {
-  background-image: linear-gradient(
-    to right,
-    hsl(211, 100%, 50%),
-    hsl(179, 100%, 30%)
-  );
-  transition: background-image 0.5s linear;
-}
+<ol>
+<li>CSS is code.</li>
+<li>CSS is not a programming language.</li>
+</ol>
 
-.gradient:hover {
-  background-image: linear-gradient(
-    to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
-  );
-}
-</code></pre>
+<p>Many developers get these backwards.</p>
 
-<p>But, no. It jumps from one gradient to the other immediately, with no smooth transition between the two.</p>
+<p>It is code in that it requires discipline and rigor. It requires forethought, planning, and both big-picture and small-picture thinking. You need to consider edge cases and strive to keep your CSS logically organized.</p>
 
-<p>So let’s hack it! We can achieve this effect with the help of a pseudo-element and an opacity transform instead.</p>
+<p>At the same time, it is not a programming language. It is not executed in a linear fashion. Many of the rules of software architecture do not (and should not) cleanly apply. It is meant to be global, a cross-cutting concern that uniformly addresses various circumstances wherever they appear on the page.</p>
 
-<p>First, apply one gradient to the element. Then, position its pseudo-element to fill the element and apply the second gradient to that. To transition between the two gradients,  transition the opacity of the pseudo-element.</p>
+<p>Too many developers try to force it into the mental model of a programming language, missing out on many of its most powerful features like the cascade and inheritance. And yet these same developers treat their CSS as an afterthought, throwing rules haphazardly onto the end of a stylesheet with little consideration for the selectors they use.</p>
 
-<pre><code class="language-css">.gradient {
-  position: relative;
-  background-image: linear-gradient(
-    to right,
-    hsl(211, 100%, 50%),
-    hsl(179, 100%, 30%)
-  );
-  z-index: 1;
-}
+<p>If you find yourself doing this, reverse your thinking. Don’t expect CSS to be a programming language, but do treat it like code.</p>
 
-.gradient::before {
-  position: absolute;
-  content: &quot;&quot;;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(
-    to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
-  );
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-
-.gradient:hover::before {
-  opacity: 1;
-}
-</code></pre>
-
-<p>The pseudo-element is initially hidden via <code>opacity: 0</code>. On hover, that transitions to an <code>opacity: 1</code>. This produces the illusion of the main gradient transitioning to the pseudo-element’s gradient. It also takes a little bit of <code>z-index</code> work to ensure the pseudo-element stays positioned behind the content of the main element.</p>
-
-<p>This takes a fair bit of code, unfortunately. But if you need this effect, this is the best (and only) way I’ve found so far to accomplish it.</p>
-
-<p>Check out the full working example:</p>
-
-<p><p data-height="300" data-theme-id="0" data-slug-hash="OgEdgN" data-default-tab="css,result" data-user="keithjgrant" data-embed-version="2" data-pen-title="OgEdgN" class="codepen">See the Pen <a href="https://codepen.io/keithjgrant/pen/OgEdgN/">OgEdgN</a> by Keith Grant (<a href="https://codepen.io/keithjgrant">@keithjgrant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
-
-          <p class="post-date">05 Jul 2017</p>
+          <p class="post-date">08 Sep 2017</p>
         </div>
         <div class="loading-indicator" id="comments-loader">
   <svg class="interaction-icon"><use xlink:href="#icon-loading"></use></svg>
@@ -219,7 +169,7 @@
   <div class="tab-pane " id="pane-replies" aria-controlled-by="tab-replies">
     <h3>Replies</h3>
     <form id="webmention-form" class="inline-form content" method="post" action="https://webmention.io/keithjgrant.com/webmention">
-      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/07/transitioning-gradients/" />
+      <input type="hidden" name="target" value="http://keithjgrant.com/posts/2017/09/code-not-clojure/" />
       <label for="reply-url">Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
       <div class="inline-form__inputs">
         <input type="text" id="reply-url" name="source" />
@@ -266,7 +216,7 @@
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function () {
-    loadWebmentions("http://keithjgrant.com/posts/2017/07/transitioning-gradients/",  null );
+    loadWebmentions("http://keithjgrant.com/posts/2017/09/code-not-clojure/",  null );
   });
 </script>
 
@@ -278,6 +228,11 @@
   <div class="bottom-container__inner">
     <h3>Recent posts</h3>
     <ul class="iconlist">
+      
+      <li><a href="http://keithjgrant.com/posts/2017/09/code-not-clojure/">
+        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
+        <div class="iconlist__title">Code Not Clojure</div>
+      </a></li>
       
       <li><a href="http://keithjgrant.com/posts/2017/07/transitioning-gradients/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
@@ -292,11 +247,6 @@
       <li><a href="http://keithjgrant.com/posts/2017/05/memorizing-alignment-properties/">
         <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
         <div class="iconlist__title">Memorizing Alignment Properties</div>
-      </a></li>
-      
-      <li><a href="http://keithjgrant.com/posts/2017/04/grid-v-tables/">
-        <svg class="focus-cap"><use xlink:href="#path-hex"></use></svg>
-        <div class="iconlist__title">What Grid Can Do That Tables Can’t</div>
       </a></li>
       
     </ul>
