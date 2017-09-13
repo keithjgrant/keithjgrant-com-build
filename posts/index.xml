@@ -10,7 +10,7 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Sep 2017 11:25:10 -0400</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
-    <link rel="self" href="http://keithjgrant.com/posts/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="self" href="https://keithjgrant.com/posts/index.xml" xmlns="http://www.w3.org/2005/Atom" />
     
     <item>
       <title>Code, Not Clojure</title>
