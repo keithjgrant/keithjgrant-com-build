@@ -4,7 +4,7 @@
     
     <title>Posts on Keith J. Grant</title>
     
-    <link>http://keithjgrant.com/posts/index.xml</link>
+    <link>https://keithjgrant.com/posts/index.xml</link>
     <description>Recent content in Posts on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -14,10 +14,10 @@
     
     <item>
       <title>Code, Not Clojure</title>
-      <link>http://keithjgrant.com/posts/2017/09/code-not-clojure/</link>
+      <link>https://keithjgrant.com/posts/2017/09/code-not-clojure/</link>
       <pubDate>Fri, 08 Sep 2017 11:25:10 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/09/code-not-clojure/</guid>
+      <guid>https://keithjgrant.com/posts/2017/09/code-not-clojure/</guid>
       <description>&lt;p&gt;I’m going to make two declarations that might sound contradictory:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Transitioning Gradients</title>
-      <link>http://keithjgrant.com/posts/2017/07/transitioning-gradients/</link>
+      <link>https://keithjgrant.com/posts/2017/07/transitioning-gradients/</link>
       <pubDate>Wed, 05 Jul 2017 13:33:51 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/07/transitioning-gradients/</guid>
+      <guid>https://keithjgrant.com/posts/2017/07/transitioning-gradients/</guid>
       <description>&lt;p&gt;In, CSS, you can’t transition a background gradient. It sure would be nice if you could:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.gradient {
@@ -114,10 +114,10 @@
     
     <item>
       <title>Thoughts on Self-Documenting CSS</title>
-      <link>http://keithjgrant.com/posts/2017/06/self-documenting-css/</link>
+      <link>https://keithjgrant.com/posts/2017/06/self-documenting-css/</link>
       <pubDate>Fri, 09 Jun 2017 13:34:24 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/06/self-documenting-css/</guid>
+      <guid>https://keithjgrant.com/posts/2017/06/self-documenting-css/</guid>
       <description>
 
 &lt;p&gt;One of the best programming books I’ve ever read is &lt;a href=&#34;https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/&#34;&gt;Clean Code&lt;/a&gt; by Robert C. Martin. If you have never read it, add it to your list.&lt;/p&gt;
@@ -361,10 +361,10 @@ Styleguide Alerts
     
     <item>
       <title>Memorizing Alignment Properties</title>
-      <link>http://keithjgrant.com/posts/2017/05/memorizing-alignment-properties/</link>
+      <link>https://keithjgrant.com/posts/2017/05/memorizing-alignment-properties/</link>
       <pubDate>Fri, 05 May 2017 09:44:55 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/05/memorizing-alignment-properties/</guid>
+      <guid>https://keithjgrant.com/posts/2017/05/memorizing-alignment-properties/</guid>
       <description>
 
 &lt;p&gt;Do you often find yourself looking up a Flexbox &lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34;&gt;cheat sheet&lt;/a&gt;? Wish you could just commit all those properties to memory and be done with it? Here’s how I memorized them.&lt;/p&gt;
@@ -401,10 +401,10 @@ Styleguide Alerts
     
     <item>
       <title>What Grid Can Do That Tables Can’t</title>
-      <link>http://keithjgrant.com/posts/2017/04/grid-v-tables/</link>
+      <link>https://keithjgrant.com/posts/2017/04/grid-v-tables/</link>
       <pubDate>Wed, 12 Apr 2017 11:52:15 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/04/grid-v-tables/</guid>
+      <guid>https://keithjgrant.com/posts/2017/04/grid-v-tables/</guid>
       <description>&lt;p&gt;There’s a kind of narrative out there that’s basically, “Silly CSS wonks: first they tell us tables are bad, now they give us grid.” Nevermind that this is completely ignorant of the original argument against tables for layout (tables were never bad for layout because of the way they looked on screen; they were bad because of what they did to your markup).&lt;/p&gt;
 
 &lt;p&gt;It’s true that grid looks a lot like tables at first glance. But it’s also worth noting the features grid provides that cannot be accomplished using tables. Here are just a few:&lt;/p&gt;
@@ -422,10 +422,10 @@ Styleguide Alerts
     
     <item>
       <title>Don’t QWOP Your Way Through CSS</title>
-      <link>http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</link>
+      <link>https://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</link>
       <pubDate>Fri, 07 Apr 2017 15:45:07 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</guid>
+      <guid>https://keithjgrant.com/posts/2017/04/dont-qwop-your-css/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.foddy.net/Athletics.html&#34;&gt;QWOP&lt;/a&gt;, if you haven’t played it, is a ridiculous running game. Instead of pressing, say, the right arrow key to run, you must control each of the runner’s muscles independently. Pressing the keys Q, W, O, and P will each extend one leg or bend one knee. Coordinating them all is incredibly difficult, and you are usually lucky if you can make a full stride before falling on your head.&lt;/p&gt;
 
 &lt;p&gt;This is also how a lot of developers treat CSS. Instead of thinking about constructing a robust system, they focus on only one specific part of the desired result. Instead of asking, “How do I run?”, they ask, “How do I flex my knee?” I can teach you how to flex your knee, but if QWOP shows us anything, that knowledge might actually make running more difficult.&lt;/p&gt;
@@ -444,10 +444,10 @@ Styleguide Alerts
     
     <item>
       <title>CSS is Not Broken</title>
-      <link>http://keithjgrant.com/posts/2017/03/css-is-not-broken/</link>
+      <link>https://keithjgrant.com/posts/2017/03/css-is-not-broken/</link>
       <pubDate>Fri, 24 Mar 2017 14:15:34 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/03/css-is-not-broken/</guid>
+      <guid>https://keithjgrant.com/posts/2017/03/css-is-not-broken/</guid>
       <description>&lt;p&gt;Coding in any language is hard before you spend time mastering it. Imagine what your JavaScript would look like if you never took the time to learn about OOP or functional programming principles? Just because you &lt;em&gt;expect&lt;/em&gt; CSS to be easy, doesn’t mean the language is broken when you find it is not.&lt;/p&gt;
 
 &lt;p&gt;A lot of people have &lt;a href=&#34;https://simpleprogrammer.com/2013/05/06/why-javascript-is-doomed/&#34;&gt;gone on about&lt;/a&gt; &lt;a href=&#34;https://medium.com/smalltalk-talk/the-three-worst-programming-languages-b1ec25a232c1#e848&#34;&gt;how horrible JavaScript is&lt;/a&gt;. JavaScript is not horrible. It is an incredible language. It has a few odd quirks, just as CSS does. But if you take the time to actually understand these quirks, you will reap huge reward.&lt;/p&gt;
@@ -473,10 +473,10 @@ Styleguide Alerts
     
     <item>
       <title>More thoughts on CSS in JS</title>
-      <link>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</link>
+      <link>https://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</link>
       <pubDate>Mon, 20 Mar 2017 15:07:49 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</guid>
+      <guid>https://keithjgrant.com/posts/2017/03/more-thoughts-on-css-in-js/</guid>
       <description>&lt;p&gt;At a previous job, I was brought in to a team of Java devs to provide a little JS support. They had been using something called PrimeFaces, basically a bunch of front-end components you drop into JSF pages. Working with it was horrid.&lt;/p&gt;
 
 &lt;p&gt;In short, these devs knew nothing about JavaScript or the front-end, but this tool let them sort of hack a UI together. It abstracted away all the tools needed for really working in the front end. For me, someone adept in JavaScript, working with PrimeFaces was like trying to code without a keyboard.&lt;/p&gt;
@@ -495,10 +495,10 @@ Styleguide Alerts
     
     <item>
       <title>A better approach to CSS aspect ratios</title>
-      <link>http://keithjgrant.com/posts/2017/03/aspect-ratios/</link>
+      <link>https://keithjgrant.com/posts/2017/03/aspect-ratios/</link>
       <pubDate>Tue, 14 Mar 2017 10:12:43 -0400</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/03/aspect-ratios/</guid>
+      <guid>https://keithjgrant.com/posts/2017/03/aspect-ratios/</guid>
       <description>
 
 &lt;p&gt;There’s an old hack for creating elements with a fixed aspect ratio that involves using a percentage-based padding. You may be familiar with it. It looks something like this:&lt;/p&gt;
@@ -633,17 +633,17 @@ Styleguide Alerts
     
     <item>
       <title>It’s Both</title>
-      <link>http://keithjgrant.com/posts/2017/01/its-both/</link>
+      <link>https://keithjgrant.com/posts/2017/01/its-both/</link>
       <pubDate>Fri, 27 Jan 2017 08:54:57 -0500</pubDate>
       
-      <guid>http://keithjgrant.com/posts/2017/01/its-both/</guid>
+      <guid>https://keithjgrant.com/posts/2017/01/its-both/</guid>
       <description>
 
 &lt;p&gt;I’m a JavaScript developer. I have experience working in large web applications and dealing with the problems that come from scaling up. I studied Computer Science in college and love solving problems of software architecture.&lt;/p&gt;
 
 &lt;p&gt;I’m also (in case you &lt;a href=&#34;https://www.manning.com/books/css-in-depth&#34;&gt;somehow missed it&lt;/a&gt;) a “CSS Guy”. I learned CSS during its infancy in the mid-nineties and have worked to stay up to speed ever since.&lt;/p&gt;
 
-&lt;p&gt;When I look out at the industry today, it kind of feels &lt;a href=&#34;https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#1e2d&#34;&gt;like&lt;/a&gt; &lt;a href=&#34;http://mrmrs.io/writing/2016/03/24/scalable-css/&#34;&gt;watching&lt;/a&gt; &lt;a href=&#34;http://www.zeldman.com/2017/01/03/kiss-my-classname/&#34;&gt;parents&lt;/a&gt; &lt;a href=&#34;https://twitter.com/thejameskyle/status/824795012680421376&#34;&gt;fight&lt;/a&gt;. And I’ll admit it, I’ve &lt;a href=&#34;http://keithjgrant.com/posts/2015/05/against-css-in-js/&#34;&gt;contributed to the problem&lt;/a&gt;. But the more I watch this unfold, the more I feel like we have two camps, talking right past one another, and no meeting in the middle. Both are missing the points the other is trying to make. So I’m shifting my stance:&lt;/p&gt;
+&lt;p&gt;When I look out at the industry today, it kind of feels &lt;a href=&#34;https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#1e2d&#34;&gt;like&lt;/a&gt; &lt;a href=&#34;http://mrmrs.io/writing/2016/03/24/scalable-css/&#34;&gt;watching&lt;/a&gt; &lt;a href=&#34;http://www.zeldman.com/2017/01/03/kiss-my-classname/&#34;&gt;parents&lt;/a&gt; &lt;a href=&#34;https://twitter.com/thejameskyle/status/824795012680421376&#34;&gt;fight&lt;/a&gt;. And I’ll admit it, I’ve &lt;a href=&#34;https://keithjgrant.com/posts/2015/05/against-css-in-js/&#34;&gt;contributed to the problem&lt;/a&gt;. But the more I watch this unfold, the more I feel like we have two camps, talking right past one another, and no meeting in the middle. Both are missing the points the other is trying to make. So I’m shifting my stance:&lt;/p&gt;
 
 &lt;h2 id=&#34;we-re-both-right&#34;&gt;We’re both right&lt;/h2&gt;
 
@@ -661,7 +661,7 @@ Styleguide Alerts
 
 &lt;h2 id=&#34;always-bet-on-del-javascript-del-the-open-web&#34;&gt;Always bet on &lt;del&gt;JavaScript&lt;/del&gt; the Open Web&lt;/h2&gt;
 
-&lt;p&gt;So, yes. Hire engineers who know how to deal with system architecture. But also &lt;a href=&#34;http://keithjgrant.com/posts/2016/10/your-team-needs-a-ux-engineer/&#34;&gt;hire someone exclusively for their CSS skills&lt;/a&gt;. Put smart people on your team from both camps. Let them work together to solve these problems. Because your problems are unique and your solutions might not look like someone else’s.&lt;/p&gt;
+&lt;p&gt;So, yes. Hire engineers who know how to deal with system architecture. But also &lt;a href=&#34;https://keithjgrant.com/posts/2016/10/your-team-needs-a-ux-engineer/&#34;&gt;hire someone exclusively for their CSS skills&lt;/a&gt;. Put smart people on your team from both camps. Let them work together to solve these problems. Because your problems are unique and your solutions might not look like someone else’s.&lt;/p&gt;
 
 &lt;p&gt;I can say with confidence that CSS in JS will pass. In our industry, something new always comes along. The saying is, “Always bet on JavaScript” &amp;mdash; but this isn’t quite right. When it’s JavaScript vs Java or Ruby, yes, bet on JS. JavaScript wins not because it is inherently better; it wins because it is part of the open web platform.&lt;/p&gt;
 
