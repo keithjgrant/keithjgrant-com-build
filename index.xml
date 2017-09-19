@@ -8,9 +8,21 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Sep 2017 19:26:25 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 13:24:20 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/notes/2017/09/48260/</link>
+      <pubDate>Tue, 19 Sep 2017 13:24:20 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/notes/2017/09/48260/</guid>
+      <description>&lt;p&gt;Interesting thread here on how Firefox rasterizes SVGs &amp;amp; the performance implications&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/Gankro/status/909795286201065472&#34;&gt;https://twitter.com/Gankro/status/909795286201065472&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -114,15 +126,6 @@
       <guid>https://keithjgrant.com/notes/2017/08/68549/</guid>
       <description>&lt;p&gt;Test post from Omnibear in Firefox!&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://keithjgrant.com/notes/2017/08/51877/</link>
-      <pubDate>Wed, 30 Aug 2017 14:24:37 +0000</pubDate>
-      
-      <guid>https://keithjgrant.com/notes/2017/08/51877/</guid>
-      <description></description>
     </item>
     
   </channel>
