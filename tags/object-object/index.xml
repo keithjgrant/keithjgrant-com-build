@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>Object Object on Keith J. Grant</title>
+    
+    <link>https://keithjgrant.com/tags/object-object/index.xml</link>
+    <description>Recent content in Object Object on Keith J. Grant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="self" href="https://keithjgrant.com/tags/object-object/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/notes/2017/09/49741/</link>
+      <pubDate>Thu, 21 Sep 2017 13:49:01 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/notes/2017/09/49741/</guid>
+      <description>&lt;p&gt;Hey ConnectJS! Are you ready to get on the IndieWeb?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
