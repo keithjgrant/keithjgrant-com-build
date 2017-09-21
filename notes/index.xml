@@ -18,7 +18,12 @@
       <pubDate>Thu, 21 Sep 2017 13:49:01 +0000</pubDate>
       
       <guid>https://keithjgrant.com/notes/connect-tech/</guid>
-      <description>&lt;p&gt;Hey ConnectJS! Are you ready to get on the IndieWeb?&lt;/p&gt;
+      <description>&lt;p&gt;Hey ConnectJS! Are you ready to get on the IndieWeb?
+&lt;style&gt;
+#webmention-form {
+  display: none;
+}
+&lt;/style&gt;&lt;/p&gt;
 </description>
     </item>
     
