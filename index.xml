@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 19:29:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Sep 2017 19:57:32 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/replies/2017/09/71852/</link>
+      <pubDate>Fri, 22 Sep 2017 19:57:32 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/replies/2017/09/71852/</guid>
+      <description>&lt;p&gt;Exactly what I was demo-ing ;)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -118,18 +128,6 @@
 &lt;p&gt;Too many developers try to force it into the mental model of a programming language, missing out on many of its most powerful features like the cascade and inheritance. And yet these same developers treat their CSS as an afterthought, throwing rules haphazardly onto the end of a stylesheet with little consideration for the selectors they use.&lt;/p&gt;
 
 &lt;p&gt;If you find yourself doing this, reverse your thinking. Don’t expect CSS to be a programming language, but do treat it like code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://keithjgrant.com/notes/2017/09/71404/</link>
-      <pubDate>Wed, 06 Sep 2017 19:50:04 +0000</pubDate>
-      
-      <guid>https://keithjgrant.com/notes/2017/09/71404/</guid>
-      <description>&lt;p&gt;Universities: Let’s create WWW using HTML so information readily available&lt;/p&gt;
-
-&lt;p&gt;Also universities: Let’s make research papers available only as PDFs&lt;/p&gt;
 </description>
     </item>
     
