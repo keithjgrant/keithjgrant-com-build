@@ -8,9 +8,19 @@
     <description>Recent content in Replies on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 19:57:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Sep 2017 13:28:56 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/replies/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/replies/2017/09/48536/</link>
+      <pubDate>Sun, 24 Sep 2017 13:28:56 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/replies/2017/09/48536/</guid>
+      <description>&lt;p&gt;It worked! Congratulations :)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -111,16 +121,6 @@
 &lt;p&gt;You can change a few inputs and have the entire system respond. You can define things in terms of your fonts, because your fonts are an integral part of the design. With pixels, small changes in the future can require code changes all over your code to adapt to that change. With units, done right, one small change can update the entire system accordingly.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/&#34;&gt;http://keithjgrant.com/posts/2017/04/dont-qwop-your-css/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://keithjgrant.com/replies/2017/04/52869/</link>
-      <pubDate>Fri, 07 Apr 2017 14:41:09 +0000</pubDate>
-      
-      <guid>https://keithjgrant.com/replies/2017/04/52869/</guid>
-      <description>&lt;p&gt;Great talk! I think more devs need to think of their CSS as a function of design principles 👍&lt;/p&gt;
 </description>
     </item>
     

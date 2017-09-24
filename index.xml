@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 19:57:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Sep 2017 13:28:56 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/replies/2017/09/48536/</link>
+      <pubDate>Sun, 24 Sep 2017 13:28:56 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/replies/2017/09/48536/</guid>
+      <description>&lt;p&gt;It worked! Congratulations :)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -104,31 +114,6 @@
       
       <guid>https://keithjgrant.com/likes/2017/09/51742/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Code, Not Clojure</title>
-      <link>https://keithjgrant.com/posts/2017/09/code-not-clojure/</link>
-      <pubDate>Fri, 08 Sep 2017 11:25:10 -0400</pubDate>
-      
-      <guid>https://keithjgrant.com/posts/2017/09/code-not-clojure/</guid>
-      <description>&lt;p&gt;I’m going to make two declarations that might sound contradictory:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;CSS is code.&lt;/li&gt;
-&lt;li&gt;CSS is not a programming language.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Many developers get these backwards.&lt;/p&gt;
-
-&lt;p&gt;It is code in that it requires discipline and rigor. It requires forethought, planning, and both big-picture and small-picture thinking. You need to consider edge cases and strive to keep your CSS logically organized.&lt;/p&gt;
-
-&lt;p&gt;At the same time, it is not a programming language. It is not executed in a linear fashion. Many of the rules of software architecture do not (and should not) cleanly apply. It is meant to be global, a cross-cutting concern that uniformly addresses various circumstances wherever they appear on the page.&lt;/p&gt;
-
-&lt;p&gt;Too many developers try to force it into the mental model of a programming language, missing out on many of its most powerful features like the cascade and inheritance. And yet these same developers treat their CSS as an afterthought, throwing rules haphazardly onto the end of a stylesheet with little consideration for the selectors they use.&lt;/p&gt;
-
-&lt;p&gt;If you find yourself doing this, reverse your thinking. Don’t expect CSS to be a programming language, but do treat it like code.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
