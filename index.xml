@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Sep 2017 15:53:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Sep 2017 15:57:59 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/notes/2017/09/57479/</link>
+      <pubDate>Thu, 28 Sep 2017 15:57:59 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/notes/2017/09/57479/</guid>
+      <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -101,16 +111,6 @@
       
       <guid>https://keithjgrant.com/likes/2017/09/56692/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://keithjgrant.com/replies/2017/09/54998/</link>
-      <pubDate>Mon, 25 Sep 2017 15:16:38 +0000</pubDate>
-      
-      <guid>https://keithjgrant.com/replies/2017/09/54998/</guid>
-      <description>&lt;p&gt;When I wrote this a couple years ago, I did not know the work already well underway on the IndieWeb. I’m glad to see the progress made since then, and I even gave a talk on it last week: &lt;a href=&#34;https://keithjgrant.com/talks/decentralized-web/&#34;&gt;https://keithjgrant.com/talks/decentralized-web/&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
