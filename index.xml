@@ -8,9 +8,19 @@
     <description>Recent content in Keith J. Grant on Keith J. Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Sep 2017 16:55:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Sep 2017 19:10:29 +0000</lastBuildDate>
     <link rel="hub"  href="https://keithjgrant.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="self" href="https://keithjgrant.com/index.xml" xmlns="http://www.w3.org/2005/Atom" />
+    
+    <item>
+      <title></title>
+      <link>https://keithjgrant.com/notes/2017/09/69029/</link>
+      <pubDate>Thu, 28 Sep 2017 19:10:29 +0000</pubDate>
+      
+      <guid>https://keithjgrant.com/notes/2017/09/69029/</guid>
+      <description>&lt;p&gt;test post from Opera&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
@@ -99,21 +109,6 @@
       
       <guid>https://keithjgrant.com/notes/2017/09/70135/</guid>
       <description>&lt;p&gt;Posting live from on stage at @connect_js!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://keithjgrant.com/notes/connect-tech/</link>
-      <pubDate>Thu, 21 Sep 2017 13:49:01 +0000</pubDate>
-      
-      <guid>https://keithjgrant.com/notes/connect-tech/</guid>
-      <description>&lt;p&gt;Hey ConnectJS! Are you ready to get on the IndieWeb?
-&lt;style&gt;
-#webmention-form {
-  display: none;
-}
-&lt;/style&gt;&lt;/p&gt;
 </description>
     </item>
     
